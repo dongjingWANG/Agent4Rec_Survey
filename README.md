@@ -36,6 +36,8 @@ We classify papers according to where LLM Agents will be adapted in the pipeline
 | PMS | [Personalized Recommendation Systems using Multimodal, Autonomous, Multi Agent Systems](https://arxiv.org/pdf/2410.19855) | Multi | Interactive Improvement | arXiv'24  |
 | Yang Zhao et al. | [Multi-scenario combination based on multi-agent reinforcement learning to optimize the advertising recommendation system](https://www.arxiv.org/pdf/2407.02759v1) | Multi | Domain-Specific | IEEE'24 |
 | Rec4Agentverse | [Prospect Personalized Recommendation on Large Language Model-based Agent Platform](https://arxiv.org/pdf/2402.18240) | Multi | Interactive Improvement | arXiv'24  |
+| Chat-REC| [Chat-REC: Towards Interactive and Explainable  LLMs-Augmented Recommender System](https://www.arxiv.org/pdf/2303.14524) | Single | Interactive Improvement | arXiv'23|
+| AutoConcierge | [Automated Interactive Domain-Specific Conversational Agents that Understand Human Dialogs](https://arxiv.org/pdf/2303.08941) |Single | Domain-Specific | PADL'23 |
 
 ### Agent for Rec
 
@@ -45,7 +47,7 @@ We classify papers according to where LLM Agents will be adapted in the pipeline
 | iAgent | [iAgent: LLM Agent as a Shield between User and Recommender Systems](https://arxiv.org/pdf/2502.14662) | Single | Interactive Improvement | ACL'25|
 | iALP | [Large Language Model driven Policy Exploration for  Recommender Systems](https://arxiv.org/pdf/2501.13816) |Single | Interactive Improvement | WSDM'25 |
 | RuleAgent | [RuleAgent: Discovering Rules for Recommendation Denoising  with Autonomous Language Agents](https://arxiv.org/pdf/2503.23374) |Single | Domain-Specific | arXiv'25  |
-| ARAG | [ARAG: Agentic Retrieval Augmented Generation for  Personalized Recommendation](https://arxiv.org/pdf/2506.21931) |Multi | General Recommendation |SIGIR'25 |
+| CARTS | [CARTS: Collaborative agents for recommendation textual summarization](http://arxiv.org/pdf/2506.17765) | Multi | Domain-Specific |arXiv'25 |
 | RecUserSim | [RecUserSim: A Realistic and Diverse User Simulator for  Evaluating Conversational Recommender Systems](https://dl.acm.org/doi/pdf/10.1145/3701716.3715258) |Single | Evaluation & Security | WWW'25 |
 | DiscomfortFilter | [Filtering discomforting recommendations with large language models](https://arxiv.org/pdf/2410.05411) |Multi | Domain-Specific | WWW'25 |
 | RecAgent | [User Behavior Simulation with Large Language Model based Agents](https://arxiv.org/pdf/2306.02552) | Single | Evaluation & Security | ACM TRANS'25 |
@@ -67,13 +69,12 @@ We classify papers according to where LLM Agents will be adapted in the pipeline
 | USimAgent | [USimAgent: Large Language Models for Simulating Search Users](https://arxiv.org/pdf/2403.09142) |Single | Evaluation & Security | SIGIR'24 |
 | CORE | [Lending Interaction Wings to Recommender Systems with Conversational Agents](https://arxiv.org/pdf/2310.04230) |Single | Interactive Improvement | NeurlPS'23  |
 | iEvaLM | [Rethinking the Evaluation for Conversational Recommendation  in the Era of Large Language Models](https://arxiv.org/pdf/2305.13112) | Single | Evaluation & Security | EMNLP'23 |
-| Chat-REC| [Chat-REC: Towards Interactive and Explainable  LLMs-Augmented Recommender System](https://www.arxiv.org/pdf/2303.14524) | Single | Interactive Improvement | arXiv'23|
 
 ### Agent in Rec
 | **Model Name** | **Paper**   | **Single/Multi** | **Application Scenarios** | **Venue**|
 | :------------- | :---------- | :--------|:--------|:------|
 | AgentCF++ | [AgentCF++: Memory-enhanced LLM-based Agents for  Popularity-aware Cross-domain Recommendations](https://arxiv.org/pdf/2502.13843) | Multi | General Recommendation | SIGIR'25 |
-| CARTS | [CARTS: Collaborative agents for recommendation textual summarization](http://arxiv.org/pdf/2506.17765) | Multi | Domain-Specific |arXiv'25 |
+| ARAG | [ARAG: Agentic Retrieval Augmented Generation for  Personalized Recommendation](https://arxiv.org/pdf/2506.21931) |Multi | General Recommendation |SIGIR'25 |
 | VRAgent-R1 | [VRAgent-R1: Boosting Video Recommendation with MLLM-based Agents via Reinforcement Learning](https://arxiv.org/abs/2507.02626) |Multi | Domain-Specific | arXiv'25 |
 | KGLA | [KGLA: Knowledge Graph Enhanced Language Agents for Recommendation](https://arxiv.org/pdf/2410.19627) | Multi | General Recommendation |arXiv'24  |
 | AFL  | [Agentic Feedback Loop Modeling Improves Recommendation  and User Simulation](https://arxiv.org/pdf/2410.20027v2) | Multi | Domain-Specific | SIGIR'24 |
@@ -81,6 +82,5 @@ We classify papers according to where LLM Agents will be adapted in the pipeline
 | BiLLP | [Large Language Models are Learnable Planners for Long-Term  Recommendation](https://arxiv.org/pdf/2403.00843) | Multi | Evaluation & Security | SIGIR'24 |
 | AgentCF | [AgentCF: Collaborative Learning with Autonomous Language  Agents for Recommender Systems](https://arxiv.org/pdf/2310.09233) |Multi | Interactive Improvement | WWW'24 |
 | CSA | [Contrastive State Augmentations for Reinforcement  Learning-Based Recommender Systems](https://www.arxiv.org/pdf/2305.11081) | Single | General Recommendation |SIGIR'23 |
-| AutoConcierge | [Automated Interactive Domain-Specific Conversational Agents that Understand Human Dialogs](https://arxiv.org/pdf/2303.08941) |Single | Domain-Specific | PADL'23 |
 
 ![](WHAT.png)
