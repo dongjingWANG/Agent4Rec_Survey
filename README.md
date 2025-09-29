@@ -34,7 +34,6 @@ We classify papers according to where LLM Agents will be adapted in the pipeline
 | ChatCRS | [Incorporating External Knowledge and Goal Guidance for LLM-based Conversational Recommender Systems](https://arxiv.org/pdf/2405.01868) | Multi | Interactive Improvement | arXiv'24 |
 | MACRS | [A Multi-Agent Conversational Recommender System](https://arxiv.org/pdf/2402.01135) | Multi | Interactive Improvement | arXiv'24  |
 | PMS | [Personalized Recommendation Systems using Multimodal, Autonomous, Multi Agent Systems](https://arxiv.org/pdf/2410.19855) | Multi | Interactive Improvement | arXiv'24  |
-| Yang Zhao et al. | [Multi-scenario combination based on multi-agent reinforcement learning to optimize the advertising recommendation system](https://www.arxiv.org/pdf/2407.02759v1) | Multi | Domain-Specific | IEEE'24 |
 | Rec4Agentverse | [Prospect Personalized Recommendation on Large Language Model-based Agent Platform](https://arxiv.org/pdf/2402.18240) | Multi | Interactive Improvement | arXiv'24  |
 | Chat-REC| [Chat-REC: Towards Interactive and Explainable  LLMs-Augmented Recommender System](https://www.arxiv.org/pdf/2303.14524) | Single | Interactive Improvement | arXiv'23|
 | AutoConcierge | [Automated Interactive Domain-Specific Conversational Agents that Understand Human Dialogs](https://arxiv.org/pdf/2303.08941) |Single | Domain-Specific | PADL'23 |
