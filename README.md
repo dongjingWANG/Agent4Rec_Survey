@@ -22,10 +22,13 @@ We classify papers according to where LLM Agents will be adapted in the pipeline
 | **Model Name** | **Paper**     | **Single/Multi** | **Application Scenarios** |**Venue** |
 | :------------- | :----------- | :--------|:--------| :-------- |
 | PUMA | [Large Language Models Empowered Personalized Web Agents](https://arxiv.org/pdf/2410.17236) | Single | Domain-Specific | WWW'25  |
+| STARec |[STARec: An Efficient Agent Framework for Recommender Systems via Autonomous Deliberate Reasoning](https://arxiv.org/pdf/2508.18812) | Single | General Recommendation | CIKM'25 |
+| REMI |[REMI: A Novel Causal Schema Memory Architecture for Personalized Lifestyle Recommendation Agents](https://arxiv.org/pdf/2509.06269) | Single | Domain-Specific | KDD'25 |
 | TAIRA | [Thought-Augmented Planning for LLM-Powered Interactive Recommender Agent](https://arxiv.org/abs/2506.23485) | Multi | Interactive Improvement | arXiv'25|
 | MMAgentRec | [MMAgentRec, a personalized multi-modal recommendation agent with large language model](https://www.nature.com/articles/s41598-025-96458-w) | Multi | Domain-Specific | Scientific Reports'25|
 | MATCHA | [MATCHA:CanMulti-Agent Collaboration Build a Trustworthy  Conversational Recommender?](https://arxiv.org/pdf/2504.20094) | Multi | Interactive Improvement | arXiv'25 |
 | RouteLLM| [Constraint-Aware Route Recommendation from Natural Language via Hierarchical LLM Agents](https://arxiv.org/pdf/2510.06078) | Multi | Domain-Specific | arXiv'25|
+| CDA4Rec | [Cloud-Device Collaborative Agents for Sequential Recommendation](https://arxiv.org/pdf/2509.01551) | Multi | Domain-Specific | arXiv'25|
 | MAS4POI | [MAS4POI: a Multi-Agents Collaboration System  for Next POI Recommendation](https://arxiv.org/pdf/2409.13700) | Multi | Domain-Specific |PAKDD'24 |
 | RecMind | [RecMind: Large Language Model Powered Agent For Recommendation](https://arxiv.org/pdf/2308.14296) |Single | General Recommendation | NAACL'24   |
 | InteRecAgent| [Recommender AI Agent: Integrating Large Language Models for Interactive Recommendations](https://arxiv.org/pdf/2308.16505) |Single | Interactive Improvement | ACM TRANS'24  |
