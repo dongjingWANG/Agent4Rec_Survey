@@ -3,11 +3,18 @@
 
 A collection of resources and papers of **LLM-Powered Agents for Recommender Systems** (Agent4Rec).
 
+<img src="docs/images/fig_agent.png" width="60%">
+
 </div>
 
 ## 📖 Abstract
 In our survey,  we offers a comprehensive review of recent research on LLM-powered agents in recommendation systems from the past three years, examining four key dimensions: where agents are applied, what agents are used, why agents are used, and how agents are designed.For the **"WHERE"** question, we explore integration strategies for LLM-powered agents and recommendation systems, categorized as Agent as Rec (primary entity), Agent for Rec (interacting to enhance performance), and Agent in Rec (embedded in specific process stages). For the **"WHAT"** question, we categorize the systems according to the quantity of agents they include, distinguishing between single-agent and multi-agent setups. For the **"WHY"** question, we categorize systems according to the specific issues they tackle within improving general recommendations, domain-specific recommendations, interactive recommendations, and system evaluation. For the **"HOW"** question, we highlights optimization approaches targeting the agents' core components—Profile, Memory, Planning, and Action Modules—to boost overall system performance.
+
+<div align="center">
+
 <img src="docs/images/fig_category.png" width="80%">
+
+</div>
 
 ### The comparison between this work and existing surveys.
 | **Paper** | **Where** | **What** |**Why** | **How** |**Pipeline** |**Highlights** |
@@ -26,27 +33,41 @@ In our survey,  we offers a comprehensive review of recent research on LLM-power
 **🔍 Explore This Survey:**
 
 - 📊 **[Where](#-data)**: The integration strategies for LLM-powered agents and recommendation systems
-  - [📊 Agent as Rec](#-agent-as-rec)
-  - [🎯 Agent for Rec](#-agent-for-rec)
-  - [📥 Agent in Rec](#-agent-in-rec)
+  - [📊 Agent as Rec](#agent-as-rec)
+  - [🎯 Agent for Rec](#agent-for-rec)
+  - [📥 Agent in Rec](#agent-in-rec)
 - 🛠️ **[What](#%EF%B8%8F-methods)**: The systems according to the quantity of agents they include
-  - [🤖 Single-Agent Systems](#-single-agent-systems)
-  - [👥 Multi-Agent Systems](#-multi-agent-systems)
+  - [🤖 Single-Agent Systems](#single-agent-systems)
+  - [👥 Multi-Agent Systems](#multi-agent-systems)
 - 🔍 **[Why](#-analysis)**: The specific issues they tackle within
-  - [📈 General Recommendations](#-general-recommendations)
-  - [🔍 Domain-Specific Recommendations](#-domain-specific-recommendations)
-  - [📚 Interactive Recommendations](#-interactive-recommendations)
-  - [🎮 System Evaluation](#-system-evaluation)
+  - [📈 General Recommendations](#general-recommendations)
+  - [🔍 Domain-Specific Recommendations](#domain-specific-recommendations)
+  - [📚 Interactive Recommendations](#interactive-recommendations)
+  - [🎮 System Evaluation](#system-evaluation)
 - 📋 **[How](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/)**: The agents' core components
-  - [🔄 Profile Module](#-profile-module)
-  - [🧠 Memory Module](#-memory-module)
-  - [🛠️ Planning Module](#-planning-module)
-  - [⚡ Action Module](#-action-module)
+  - [🔄 Profile Module](#profile-module)
+  - [🧠 Memory Module](#memory-module)
+  - [🛠️ Planning Module](#planning-module)
+  - [⚡ Action Module](#action-module)
 - 📄 **[Full Paper](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/paper/)**: Read the complete survey paper
   <!-- END EXPLORE -->
 
+<!-- START PAPERS -->
+
 ## Paper List
-### Agent as Rec
+
+### 📊WHERE
+
+We analyze three integration strategies for LLM agents and recommender systems: Agent as Rec, Agent for Rec, and Agent in Rec.
+
+<div align="center">
+
+<img src="docs/images/fig_where.png" width="80%">
+
+</div>
+
+#### 📊Agent as Rec
+
 | **Model Name** | **Paper**     | **Single/Multi** | **Application Scenarios** |**Venue** |
 | :------------- | :----------- | :--------|:--------| :-------- |
 | PUMA | [Large Language Models Empowered Personalized Web Agents](https://arxiv.org/pdf/2410.17236) | Single | Domain-Specific | WWW'25  |
@@ -71,7 +92,7 @@ In our survey,  we offers a comprehensive review of recent research on LLM-power
 | Rec4Agentverse | [Prospect Personalized Recommendation on Large Language Model-based Agent Platform](https://arxiv.org/pdf/2402.18240) | Multi | Interactive Improvement | arXiv'24  |
 | AutoConcierge | [Automated Interactive Domain-Specific Conversational Agents that Understand Human Dialogs](https://arxiv.org/pdf/2303.08941) |Single | Domain-Specific | PADL'23 |
 
-### Agent for Rec
+#### 🎯Agent for Rec
 
 | **Model Name**  | **Paper** | **Single/Multi** | **Application Scenarios** | **Venue** |
 | :--------------- | :-------|:--------|:--------| :--------|
@@ -102,7 +123,7 @@ In our survey,  we offers a comprehensive review of recent research on LLM-power
 | CORE | [Lending Interaction Wings to Recommender Systems with Conversational Agents](https://arxiv.org/pdf/2310.04230) |Single | Interactive Improvement | NeurlPS'23  |
 | iEvaLM | [Rethinking the Evaluation for Conversational Recommendation  in the Era of Large Language Models](https://arxiv.org/pdf/2305.13112) | Single | Evaluation & Security | EMNLP'23 |
 
-### Agent in Rec
+#### 📥 Agent in Rec
 | **Model Name** | **Paper**   | **Single/Multi** | **Application Scenarios** | **Venue**|
 | :------------- | :---------- | :--------|:--------|:------|
 | AgentCF++ | [AgentCF++: Memory-enhanced LLM-based Agents for  Popularity-aware Cross-domain Recommendations](https://arxiv.org/pdf/2502.13843) | Multi | General Recommendation | SIGIR'25 |
@@ -116,4 +137,51 @@ In our survey,  we offers a comprehensive review of recent research on LLM-power
 | AgentCF | [AgentCF: Collaborative Learning with Autonomous Language  Agents for Recommender Systems](https://arxiv.org/pdf/2310.09233) |Multi | Interactive Improvement | WWW'24 |
 | CSA | [Contrastive State Augmentations for Reinforcement  Learning-Based Recommender Systems](https://www.arxiv.org/pdf/2305.11081) | Single | General Recommendation |SIGIR'23 |
 
-![](WHAT.png)
+
+
+### 🛠️WHAT
+
+We examine the system architecture, cat egorizing it into single-agent systems and multi-agent systems based on the number of agents involved.
+
+<div align="center">
+
+<img src="docs/images/fig_what.png" width="80%">
+
+</div>
+
+#### 🤖Single-Agent Systems
+
+#### 👥Multi-Agent Systems
+
+### 🔍  WHY
+
+We investigate the underlying rationale for the design of each agent. This analysis reveals four distinct classification criteria: the enhancement of general recommendation tasks, the consideration of vertical and domain-specific scenarios, the facilitation and improvement of interactive recommendations, and the assessment of the performance of recommender systems.
+
+<div align="center">
+
+<img src="docs/images/fig_why.png" width="80%">
+
+</div>
+
+#### 📈 General Recommendations
+
+#### 🔍Domain-Specific Recommendations
+
+#### 📚Interactive Recommendations
+
+#### 🎮System Evaluation
+
+### 📋HOW
+
+We analyzed the optimization modules of each agent, including the Profile Module, Memory Module, Planning Module, and Action Module.
+
+#### 🔄 Profile Module
+
+#### 🧠 Memory Module
+
+#### 🛠️ Planning Module
+
+#### ⚡ Action Module
+
+
+
