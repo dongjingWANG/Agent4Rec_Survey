@@ -282,23 +282,133 @@ We investigate the underlying rationale for the design of each agent. This analy
 
 #### 📈 General Recommendations
 
+**RecMind**: RecMind: Large Language Model Powered Agent For Recommendation[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2308.14296)
+
+**MACRec**: MACRec: a Multi-Agent Collaboration Framework for Recommendation[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2402.15235)
+
+**RecAI**: RecAI: Leveraging Large Language Models for Next-Generation Recommender Systems[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2403.06465)
+
+**AgentCF++**:   AgentCF++: Memory-enhanced LLM-based Agents for  Popularity-aware Cross-domain Recommendations[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2502.13843)
+
+**RAH**:   RAH! RecSys-Assistant-Human: A Human-Centered Recommendation Framework with LLM Agents[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2308.09904)
+
+**Zhang et al.**: LLM-Powered User Simulator for Recommender System[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2412.16984)
+
+**Jie Wang et al.**:   Reinforcement Learning-based Recommender Systems with  Large Language Models for State Reward and Action Modeling[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://www.arxiv.org/pdf/2403.16948)
+
+**CSA**: Contrastive State Augmentations for Reinforcement  Learning-Based Recommender Systems[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://www.arxiv.org/pdf/2305.11081)
+
+**KGLA**: KGLA: Knowledge Graph Enhanced Language Agents for Recommendation[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2410.19627)
+
+**STARec**: STARec: An Efficient Agent Framework for Recommender Systems via Autonomous Deliberate Reasoning[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2508.18812)
+
+**MADREC**: MADREC:AMulti-Aspect Driven LLM Agent for Explainable and Adaptive Recommendation[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2510.13371)
+
+**AgentDR**: AgentDR: Dynamic Recommendation with Implicit Item-Item Relations via LLM-based Agents[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2510.05598)
+
+**RPP**: Reinforced prompt personalization for recommendation with large language models[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2407.17115)
+
+**ARAG**: ARAG: Agentic Retrieval Augmented Generation for  Personalized Recommendation[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2506.21931)
+
 #### 🔍Domain-Specific Recommendations
+
+**ToolRec**: Let Me Do It For You: Towards LLM Empowered Recommendation via Tool Learning[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2405.15114)
+
+**Shuang et al.**: An Extremely Data-efficient and Generative LLM-based Reinforcement Learning Agent for Recommenders[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2408.16032)
+
+**AutoConcierge**：Automated Interactive Domain-Specific Conversational Agents that Understand Human Dialogs[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2303.08941)
+
+**MMAgentRec**: MMAgentRec, a personalized multi-modal recommendation agent with large language model[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://www.nature.com/articles/s41598-025-96458-w)
+
+**MAS4POI**: MAS4POI: a Multi-Agents Collaboration System  for Next POI Recommendation[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2409.13700)
+
+**DiscomfortFilter**: Filtering discomforting recommendations with large language models[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2410.05411)
+
+**Lusifer**: Lusifer: LLM-based User Simulated Feedback  Environment For online Recommender systems[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://www.arxiv.org/pdf/2405.13362v4)
+
+**RuleAgent**: RuleAgent: Discovering Rules for Recommendation Denoising  with Autonomous Language Agents[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2503.23374)
+
+**PEARL**: PEARL: Preference Extraction with Exemplar Augmentation and Retrieval with LLM Agents[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://aclanthology.org/2024.emnlp-industry.112.pdf)
+
+**CARTS**: CARTS: Collaborative agents for recommendation textual summarization[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](http://arxiv.org/pdf/2506.17765)
+
+**VRAgent-R1**: VRAgent-R1: Boosting Video Recommendation with MLLM-based Agents via Reinforcement Learning[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2507.02626)
+
+**PUMA**: Large Language Models Empowered Personalized Web Agents[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2410.17236)
+
+**CDA4Rec**: Cloud-Device Collaborative Agents for Sequential Recommendation[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2509.01551)
+
+**REMI**: REMI: A Novel Causal Schema Memory Architecture for Personalized Lifestyle Recommendation Agents[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2509.06269)
+
+**RouteLLM**: Constraint-Aware Route Recommendation from Natural Language via Hierarchical LLM Agents[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2510.06078)
+
+**MARC**: MARC: Multimodal and Multi-Task Agentic Retrieval-Augmented Generation for Cold-Start Recommender System[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2511.08181)
+
+**AFL**: Agentic Feedback Loop Modeling Improves Recommendation  and User Simulation[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2410.20027v2)
 
 #### 📚Interactive Recommendations
 
+**iAgent**: iAgent: LLM Agent as a Shield between User and Recommender Systems[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2502.14662)
+
+**InteRecAgent**: Recommender AI Agent: Integrating Large Language Models for Interactive Recommendations[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2308.16505)
+
+**MACRS**: A Multi-Agent Conversational Recommender System[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2402.01135)
+
+**Rec4Agentverse**: Prospect Personalized Recommendation on Large Language Model-based Agent Platform [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2402.18240)
+
+**TAIRA**:  Thought-Augmented Planning for LLM-Powered Interactive Recommender Agent [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2506.23485)
+
+**MATCHA**: MATCHA:CanMulti-Agent Collaboration Build a Trustworthy  Conversational Recommender?[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2504.20094)
+
+**CSHI**: A LLM-based Controllable, Scalable, Human-Involved User Simulator Framework for Conversational Recommender Systems[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2405.08035)
+
+**iALP**: Large Language Model driven Policy Exploration for  Recommender Systems[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2501.13816)
+
+**CORE**: Lending Interaction Wings to Recommender Systems with Conversational Agents[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2310.04230)
+
+**ChatCRS**: Incorporating External Knowledge and Goal Guidance for LLM-based Conversational Recommender Systems[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2405.01868)
+
+**AgentCF**:   AgentCF: Collaborative Learning with Autonomous Language  Agents for Recommender Systems[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2310.09233)
+
+**PMS**: Personalized Recommendation Systems using Multimodal, Autonomous, Multi Agent Systems [![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2410.19855)
+
 #### 🎮System Evaluation
+
+**iEvaLM**: Rethinking the Evaluation for Conversational Recommendation  in the Era of Large Language Models[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2305.13112)
+
+**BiLLP**: Large Language Models are Learnable Planners for Long-Term  Recommendation[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2403.00843)
+
+**RecAgent**: User Behavior Simulation with Large Language Model based Agents[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2306.02552)
+
+**DrunkAgent**: Get the Agents Drunk: Memory Perturbations in Autonomous  Agent-based Recommender Systems[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2503.23804)
+
+**SimpleUserSim**: How Reliable is Your Simulator? Analysis on the Limitations of  Current LLM-based User Simulators for Conversational  Recommendation[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2403.16416)
+
+**CreAgent**: CreAgent: Towards Long-Term Evaluation of Recommender System under Platform-Creator Information Asymmetry[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2502.07307)
+
+**Yoon et al.**:   Evaluating Large Language Models as Generative User Simulators for  Conversational Recommendation[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2403.09738)
+
+**USimAgent**: USimAgent: Large Language Models for Simulating Search Users[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2403.09142)
+
+**Chirag Shah et al.**: Dynamic Evaluation Framework for Personalized and Trustworthy Agents: A Multi-Session Approach to Preference Adaptability[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://www.arxiv.org/pdf/2504.06277)
+
+**TextSimu**：ID-Free Not Risk-Free: LLM-Powered Agents Unveil Risks in  ID-Free Recommender Systems[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2409.11690v3)
+
+**AFL**: Agentic Feedback Loop Modeling Improves Recommendation  and User Simulation[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2410.20027v2)
+
+**RecUserSim**: RecUserSim: A Realistic and Diverse User Simulator for  Evaluating Conversational Recommender Systems[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://dl.acm.org/doi/pdf/10.1145/3701716.3715258)
+
+**PEPPER**: Stop Playing the Guessing Game ! Target-free User Simulation for Evaluating Conversational Recommender Systems[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://www.arxiv.org/pdf/2411.16160)
+
+**Agent4Rec**: On Generative Agents in Recommendation[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2310.10108)
+
+**SUBER**: SUBER: An RL Environment with Simulated  Human Behavior for Recommender Systems[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2406.01631)
+
+**CheatAgent**:   CheatAgent: Attacking LLM-Empowered Recommender Systems via LLM Agent[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://dl.acm.org/doi/10.1145/3637528.3671837)
 
 ### 📋HOW
 
 We analyzed the optimization modules of each agent, including the Profile Module, Memory Module, Planning Module, and Action Module.
-
-#### 🔄 Profile Module
-
-#### 🧠 Memory Module
-
-#### 🛠️ Planning Module
-
-#### ⚡ Action Module
 
 
 
