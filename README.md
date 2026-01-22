@@ -410,5 +410,64 @@ We investigate the underlying rationale for the design of each agent. This analy
 
 We analyzed the optimization modules of each agent, including the Profile Module, Memory Module, Planning Module, and Action Module.
 
-
+|    **Methods**     | **Profile** Module | **Memory** Module | **Planning** Module | **Action** Module | **Code** |          **Model**(Framework)           |               **Dataset**               |
+| :----------------: | :----------------: | :---------------: | :-----------------: | :---------------: | :------: | :-------------------------------------: | :-------------------------------------: |
+|        CSA         |         ❌          |         ✅         |          ❌          |         ✅         |    ✅     |               Tensorflow                |     RC15, RetailRocket  and Meituan     |
+|       iEvaLM       |         ❌          |         ❌         |          ❌          |         ✅         |    ✅     |              GPT-3.5-turbo              |           ReDial, OpenDialKG            |
+|        CORE        |         ❌          |         ❌         |          ✅          |         ❌         |    ❌     |              GPT-3.5-turbo              |      Amazon, Last.fm, Yelp, Taobao      |
+|      AgentCF       |         ❌          |         ✅         |          ❌          |         ✅         |    ❌     |                 RecBole                 |     CDs and Vinyl, Office Products      |
+|     Agent4Rec      |         ✅          |         ✅         |          ❌          |         ✅         |    ✅     |                LangChain                |        MovieLens-1M, Steam, Book        |
+|  Jie Wang et al.   |         ❌          |         ✅         |          ✅          |         ✅         |    ❌     |               Mistral 7B                |              LFM, Industry              |
+|        RAH         |         ✅          |         ✅         |          ✅          |         ✅         |    ❌     |               GPT-4-0613                |       Movies, Books, Video Games        |
+|       PEARL        |         ❌          |         ✅         |          ❌          |         ✅         |    ❌     |            Claude-instant-v1            |      Internal Dataset, MultiWOZ-H       |
+|     USimAgent      |         ❌          |         ❌         |          ✅          |         ✅         |    ❌     |                  GPT-4                  |                UserStudy                |
+|    Zhang et al.    |         ✅          |         ❌         |          ✅          |         ❌         |    ✅     |               ChatGLM-6B                |           Yelp, Music, Games            |
+|   AutoConcierge    |         ✅          |         ✅         |          ✅          |         ✅         |    ❌     |                  GPT-3                  |          No available datasets          |
+|     CheatAgent     |         ❌          |         ❌         |          ✅          |         ❌         |    ❌     |                   T5                    |      MovieLens-1M, LastFM, Taobao       |
+|       PEPPER       |         ❌          |         ✅         |          ❌          |         ✅         |    ❌     |              GPT-3.5-turbo              |        IMDb, ReDial, OpenDialKG         |
+|      ToolRec       |         ❌          |         ❌         |          ✅          |         ✅         |    ✅     |            GPT-3.5-turbo-16k            |          ML-1M, Book, Yelp2018          |
+|    Yoon et al.     |         ❌          |         ✅         |          ❌          |         ✅         |    ✅     |                 PyABSA                  |        ReDial, Reddit, MovieLens        |
+|   SimpleUserSim    |         ✅          |         ❌         |          ❌          |         ✅         |    ❌     |                 iEvaLM                  |           ReDial, OpenDialKG            |
+|       SUBER        |         ❌          |         ✅         |          ❌          |         ❌         |    ✅     |               Sentence-T5               |          ML-latest small, Book          |
+|      Lusifer       |         ❌          |         ✅         |          ❌          |         ✅         |    ✅     |               GPT-4o-mini               |                MovieLens                |
+|        CSHI        |         ✅          |         ✅         |          ❌          |         ✅         |    ✅     |              GPT-3.5-turbo              |      ReDial, OpenDialKG, MovieLens      |
+|   Rec4Agentverse   |         ✅          |         ✅         |          ✅          |         ✅         |    ❌     |                  GPT-4                  |              Generate data              |
+|        PMS         |         ✅          |         ✅         |          ✅          |         ✅         |    ❌     |                LangChain                |             Created dataset             |
+|       MACRS        |         ✅          |         ✅         |          ✅          |         ✅         |    ❌     | GPT-3.5-turbo-0613, Llama-2-70b-chat-hf |                MovieLens                |
+|      ChatCRS       |         ✅          |         ❌         |          ✅          |         ❌         |    ✅     |      GPT-3.5-turbo-1106, LLaMA-7b       |          DuRecDial, TG-Redial           |
+|       BiLLP        |         ❌          |         ❌         |          ✅          |         ❌         |    ✅     |            GPT-3.5-turbo-16k            |               Steam, Book               |
+|       MACRec       |         ✅          |         ✅         |          ✅          |         ✅         |    ✅     |           GPT-3.5-turbo-1106            |              Generate data              |
+|       RecAI        |         ✅          |         ✅         |          ✅          |         ❌         |    ✅     |                  GPT-4                  |    Beauty, Video Games, MovieLens 1M    |
+|   Shuang et al.    |         ❌          |         ❌         |          ❌          |         ✅         |    ❌     |                  BERT                   |                 WebShop                 |
+|    InteRecAgent    |         ✅          |         ✅         |          ✅          |         ❌         |    ✅     |                LangChain                |        Steam, MovieLens, Beauty         |
+|      RecMind       |         ❌          |         ✅         |          ✅          |         ✅         |    ❌     |            GPT-3.5-turbo-16k            |              Reviews, Yelp              |
+|      MAS4POI       |         ✅          |         ✅         |          ✅          |         ✅         |    ✅     |            Six Distinct LLMs            |                NYC, TKY                 |
+|      TextSimu      |         ✅          |         ✅         |          ✅          |         ✅         |    ❌     |               GPT-4o mini               |       Beauty, Instrument, Office        |
+|      RecAgent      |         ✅          |         ✅         |          ❌          |         ✅         |    ❌     |                 ChatGPT                 |  MovieLens-1M,  Beauty, Book-Crossing   |
+|        AFL         |         ❌          |         ✅         |          ✅          |         ✅         |    ✅     |               GPT-4o-mini               |        Lastfm, Steam, MovieLens         |
+|        KGLA        |         ❌          |         ✅         |          ❌          |         ❌         |    ❌     |         Claude3-Haiku-20240307          |          CDs, Clothing, Beauty          |
+|        iALP        |         ❌          |         ❌         |          ✅          |         ✅         |    ❌     |               Mistral 7B                |           LFM, Industry, Coat           |
+|        REMI        |         ❌          |         ✅         |          ✅          |         ✅         |    ❌     |            Gemini-2.0-Flash             |              Generate data              |
+|       iAgent       |         ✅          |         ✅         |          ❌          |         ❌         |    ✅     |               GPT-4o-mini               |         Book, Movie, Goodreads          |
+|        PUMA        |         ❌          |         ✅         |          ❌          |         ✅         |    ✅     |               LLaMA-2-7B                |                 Review                  |
+|     MMAgentRec     |         ✅          |         ✅         |          ❌          |         ✅         |    ❌     |                  BERT                   |   Guangdong Tourism Dataset, QK-Video   |
+|      CDA4Rec       |         ✅          |         ❌         |          ✅          |         ✅         |    ❌     |              LLaMA-3.1-8B               |        ReDial, Music4All, Sports        |
+|       MATCHA       |         ❌          |         ❌         |          ✅          |         ✅         |    ❌     |              Multiple LLMs              |          OMuleT, WildJailbreak          |
+|       CARTS        |         ❌          |         ✅         |          ❌          |         ✅         |    ❌     |                 GPT-4o                  |      Beauty, Electronics, Fashion       |
+|     VRAgent-R1     |         ❌          |         ✅         |          ✅          |         ✅         |    ❌     |               Qwen2.5-7B                |      MicroLens-100K, MovieLens-1M       |
+|       MADREC       |         ✅          |         ✅         |          ❌          |         ❌         |    ❌     |              GPT-4.1-nano               |          Beauty, Sports, Toys           |
+|        ARAG        |         ❌          |         ✅         |          ✅          |         ✅         |    ❌     |              GPT-3.5-turbo              |                 Review                  |
+|       TAIRA        |         ❌          |         ❌         |          ✅          |         ❌         |    ✅     |                 GPT-4o                  |     Clothing & Shoes, Beauty, Music     |
+|     RecUserSim     |         ✅          |         ✅         |          ❌          |         ✅         |    ❌     |              Multiple LLMs              |              Generate data              |
+|  DiscomfortFilter  |         ✅          |         ❌         |          ❌          |         ❌         |    ❌     |              Multiple LLMs              |                  MIND                   |
+|       STARec       |         ❌          |         ❌         |          ✅          |         ✅         |    ❌     |              Multiple LLMs              |       MovieLens 1M, CDs and Vinyl       |
+|      CreAgent      |         ✅          |         ✅         |          ❌          |         ✅         |    ✅     |                Llama3-8B                |                 YouTube                 |
+| Chirag Shah et al. |         ✅          |         ✅         |          ✅          |         ✅         |    ❌     |              Not Specified              |              Not Specified              |
+|     DrunkAgent     |         ❌          |         ✅         |          ❌          |         ❌         |    ❌     |           LLaMA3-8B-Instruct            |  CDs & Vinyl, Office Products, Musical  |
+|     RuleAgent      |         ✅          |         ✅         |          ✅          |         ✅         |    ❌     |               GPT-4o mini               |        Beauty, Yelp2018, Gowalla        |
+|     AgentCF++      |         ❌          |         ✅         |          ❌          |         ❌         |    ✅     |               GPT-4o-mini               |        Books, CDs, Movies, Games        |
+|      AgentDR       |         ❌          |         ✅         |          ❌          |         ✅         |    ❌     |                  Phi-4                  |     Instacart, Electronics, Sports      |
+|      RouteLLM      |         ❌          |         ❌         |          ✅          |         ✅         |    ✅     |                 GPT-4o                  |              Generate data              |
+|        MARC        |         ❌          |         ❌         |          ✅          |         ✅         |    ✅     |                 GPT-4o                  | cocktails, ingredients and instructions |
+|        RPP         |         ❌          |         ❌         |          ❌          |         ✅         |    ✅     |             LLaMa2-7B-chat              |          ML-1M, Games, Lastfm           |
 
