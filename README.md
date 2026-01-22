@@ -1,21 +1,49 @@
 # Agent4Rec_Survey
-A collection of resources and papers of **LLM-Based Agents for Recommender Systems** (Agent4Rec).
-## Introduction
-In our survey,  we offers a comprehensive review of recent research on LLM-based agents in recommendation systems from the past three years, examining four key dimensions: where agents are applied, what agents are used, why agents are used, and how agents are designed.For the **"WHERE"** question, we explore integration strategies for LLM-based agents and recommendation systems, categorized as Agent as Rec (primary entity), Agent for Rec (interacting to enhance performance), and Agent in Rec (embedded in specific process stages). For the **"WHAT"** question, we categorize the systems according to the quantity of agents they include, distinguishing between single-agent and multi-agent setups. For the **"WHY"** question, we categorize systems according to the specific issues they tackle within improving general recommendations, domain-specific recommendations, interactive recommendations, and system evaluation. For the **"HOW"** question, we highlights optimization approaches targeting the agents' core components—Profile, Memory, Planning, and Action Modules—to boost overall system performance.
-![](Category.png)
-We classify papers according to where LLM Agents will be adapted in the pipeline of RS, which is summarized in the figure below.
-![](WHERE.png)
+<div align="center">
+
+A collection of resources and papers of **LLM-Powered Agents for Recommender Systems** (Agent4Rec).
+
+</div>
+
+## 📖 Abstract
+In our survey,  we offers a comprehensive review of recent research on LLM-powered agents in recommendation systems from the past three years, examining four key dimensions: where agents are applied, what agents are used, why agents are used, and how agents are designed.For the **"WHERE"** question, we explore integration strategies for LLM-powered agents and recommendation systems, categorized as Agent as Rec (primary entity), Agent for Rec (interacting to enhance performance), and Agent in Rec (embedded in specific process stages). For the **"WHAT"** question, we categorize the systems according to the quantity of agents they include, distinguishing between single-agent and multi-agent setups. For the **"WHY"** question, we categorize systems according to the specific issues they tackle within improving general recommendations, domain-specific recommendations, interactive recommendations, and system evaluation. For the **"HOW"** question, we highlights optimization approaches targeting the agents' core components—Profile, Memory, Planning, and Action Modules—to boost overall system performance.
+<img src="docs/images/fig_category.png" width="80%">
+
 ### The comparison between this work and existing surveys.
 | **Paper** | **Where** | **What** |**Why** | **How** |**Pipeline** |**Highlights** |
 | :------------- | :----------------------------------------------------------- | :----------------- | :------- |:------- |:------- |:------- |
 | Recommender Systems Meet Large Language Model Agents: A Survey |  |✅|  |✅| (1) Agents for RS (2) RS for Agents (3) Trustworthy Agents and RS | analyzes how the LLM agent module supports recommendation systems and how recommendation systems,in turn, optimize the operation of these agents. |
 | A Survey on LLM-powered Agents for Recommender Systems |  |✅|  |✅| (1) Recommender-oriented approaches (2) Interaction-oriented approaches (3) Simulation-oriented approaches | identifies three key paradigms in current research and explores their architectural components and evaluation frameworks.|
-| A Survey of Large Language Model Empowered Agents for Recommendation and Search: Towards Next-Generation Information Retrieval |  |✅|  |✅| (1) User Interaction (2) Item Representation (3) System Integration (4) Environment Simulation | emphasizes how LLM-based agents improve recommender systems by enabling deep semantic understanding, dynamic task decomposition, and interactive user engagement |
+| A Survey of Large Language Model Empowered Agents for Recommendation and Search: Towards Next-Generation Information Retrieval |  |✅|  |✅| (1) User Interaction (2) Item Representation (3) System Integration (4) Environment Simulation | emphasizes how LLM-powered agents improve recommender systems by enabling deep semantic understanding, dynamic task decomposition, and interactive user engagement |
 | **Ours** |✅|✅|✅|✅| (1) Where agents are applied (2) What agents are used (3) Why agents are used (4) How agents are designed | proposes four key questions—"Where," "What," "Why," and "How" to conduct a comprehensive analysis of the existing academic research. |
 ## Key Contributions
 1. A comprehensive review of the application of agents in RS across four dimensions from 2023 to 2025.
-2. A novel system taxonomy is proposed, categorizing the integration strategies of LLM-based agents in recommendation systems into three paradigms.
+2. A novel system taxonomy is proposed, categorizing the integration strategies of LLM-powered agents in recommendation systems into three paradigms.
 3. Challenges for recommendation agents include computational cost, confidence, data security, robustness, and scalability among multiple agents.
+
+<!-- START EXPLORE -->
+
+**🔍 Explore This Survey:**
+
+- 📊 **[Where](#-data)**: The integration strategies for LLM-powered agents and recommendation systems
+  - [📊 Agent as Rec](#-agent-as-rec)
+  - [🎯 Agent for Rec](#-agent-for-rec)
+  - [📥 Agent in Rec](#-agent-in-rec)
+- 🛠️ **[What](#%EF%B8%8F-methods)**: The systems according to the quantity of agents they include
+  - [🤖 Single-Agent Systems](#-single-agent-systems)
+  - [👥 Multi-Agent Systems](#-multi-agent-systems)
+- 🔍 **[Why](#-analysis)**: The specific issues they tackle within
+  - [📈 General Recommendations](#-general-recommendations)
+  - [🔍 Domain-Specific Recommendations](#-domain-specific-recommendations)
+  - [📚 Interactive Recommendations](#-interactive-recommendations)
+  - [🎮 System Evaluation](#-system-evaluation)
+- 📋 **[How](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/tables/)**: The agents' core components
+  - [🔄 Profile Module](#-profile-module)
+  - [🧠 Memory Module](#-memory-module)
+  - [🛠️ Planning Module](#-planning-module)
+  - [⚡ Action Module](#-action-module)
+- 📄 **[Full Paper](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/paper/)**: Read the complete survey paper
+  <!-- END EXPLORE -->
 
 ## Paper List
 ### Agent as Rec
