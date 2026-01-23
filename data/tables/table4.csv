@@ -1,0 +1,11 @@
+Model Name,Paper,Single/Multi,Application Scenarios,Venue
+AgentCF++,[AgentCF++: Memory-enhanced LLM-based Agents for  Popularity-aware Cross-domain Recommendations](https://dl.acm.org/doi/abs/10.1145/3726302.3730161),Multi,General Recommendation,SIGIR'25
+RPP,[Reinforced prompt personalization for recommendation with large language models](https://dl.acm.org/doi/full/10.1145/3716320),Multi,General Recommendation,ACM TRANS'25
+ARAG,[ARAG: Agentic Retrieval Augmented Generation for  Personalized Recommendation](https://arxiv.org/pdf/2506.21931),Multi,General Recommendation,SIGIR'25
+VRAgent-R1,[VRAgent-R1: Boosting Video Recommendation with MLLM-based Agents via Reinforcement Learning](https://arxiv.org/pdf/2507.02626),Multi,Domain-Specific,arXiv'25
+AFL,[Agentic Feedback Loop Modeling Improves Recommendation  and User Simulation](https://dl.acm.org/doi/abs/10.1145/3726302.3729893),Multi,Domain-Specific,SIGIR'25
+KGLA,[KGLA: Knowledge Graph Enhanced Language Agents for Recommendation](https://arxiv.org/pdf/2410.19627),Multi,General Recommendation,arXiv'24
+Jie Wang et al.,[Reinforcement Learning-based Recommender Systems with  Large Language Models for State Reward and Action Modeling](https://dl.acm.org/doi/abs/10.1145/3626772.3657767),Single,General Recommendation,SIGIR'24
+BiLLP,[Large Language Models are Learnable Planners for Long-Term  Recommendation](https://dl.acm.org/doi/abs/10.1145/3626772.3657683),Multi,Evaluation & Security,SIGIR'24
+AgentCF,[AgentCF: Collaborative Learning with Autonomous Language  Agents for Recommender Systems](https://dl.acm.org/doi/abs/10.1145/3589334.3645537),Multi,Interactive Improvement,WWW'24
+CSA,[Contrastive State Augmentations for Reinforcement  Learning-Based Recommender Systems](https://dl.acm.org/doi/abs/10.1145/3539618.3591656),Single,General Recommendation,SIGIR'23

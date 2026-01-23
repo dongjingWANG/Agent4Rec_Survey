@@ -1,0 +1,23 @@
+Model Name,Paper,Single/Multi,Application Scenarios,Venue
+PUMA,[Large Language Models Empowered Personalized Web Agents](https://dl.acm.org/doi/10.1145/3696410.3714842),Single,Domain-Specific,WWW'25
+STARec,[STARec: An Efficient Agent Framework for Recommender Systems via Autonomous Deliberate Reasoning](https://dl.acm.org/doi/10.1145/3746252.3760995),Single,General Recommendation,CIKM'25
+REMI,[REMI: A Novel Causal Schema Memory Architecture for Personalized Lifestyle Recommendation Agents](https://oars-workshop.github.io/papers/Raman2025.pdf),Single,Domain-Specific,KDD'25
+AgentDR,[AgentDR: Dynamic Recommendation with Implicit Item-Item Relations via LLM-based Agents](https://arxiv.org/pdf/2510.05598),Single,General Recommendation,arXiv'25
+TAIRA,[Thought-Augmented Planning for LLM-Powered Interactive Recommender Agent](https://arxiv.org/abs/2506.23485),Multi,Interactive Improvement,arXiv'25
+MARC,[MARC: Multimodal and Multi-Task Agentic Retrieval-Augmented Generation for Cold-Start Recommender System](https://arxiv.org/abs/2511.08181),Multi,Domain-Specific,CIKM'25
+MMAgentRec,[MMAgentRec,Multi,Domain-Specific,Scientific Reports'25
+MATCHA,[MATCHA:CanMulti-Agent Collaboration Build a Trustworthy  Conversational Recommender?](https://arxiv.org/pdf/2504.20094),Multi,Interactive Improvement,arXiv'25
+RouteLLM,[Constraint-Aware Route Recommendation from Natural Language via Hierarchical LLM Agents](https://arxiv.org/pdf/2510.06078),Multi,Domain-Specific,arXiv'25
+CDA4Rec,[Cloud-Device Collaborative Agents for Sequential Recommendation](https://arxiv.org/pdf/2509.01551),Multi,Domain-Specific,arXiv'25
+ChatCRS,[Incorporating External Knowledge and Goal Guidance for LLM-based Conversational Recommender Systems](https://aclanthology.org/2025.findings-naacl.17/),Multi,Interactive Improvement,NAACL'25
+MADREC,[MADREC:AMulti-Aspect Driven LLM Agent for Explainable and Adaptive Recommendation](https://arxiv.org/pdf/2510.13371),Single,General Recommendation,arXiv'25
+InteRecAgent,[Recommender AI Agent: Integrating Large Language Models for Interactive Recommendations](https://dl.acm.org/doi/full/10.1145/3731446),Single,Interactive Improvement,ACM TRANS'25
+MAS4POI,[MAS4POI: a Multi-Agents Collaboration System  for Next POI Recommendation](https://link.springer.com/chapter/10.1007/978-981-96-8180-8_28),Multi,Domain-Specific,PAKDD'24
+RecMind,[RecMind: Large Language Model Powered Agent For Recommendation](https://aclanthology.org/2024.findings-naacl.271/),Single,General Recommendation,NAACL'24
+Shuang et al.,[An Extremely Data-efficient and Generative LLM-based Reinforcement Learning Agent for Recommenders](https://arxiv.org/pdf/2408.16032),Single,Domain-Specific,KDD'24
+RecAI,[RecAI: Leveraging Large Language Models for Next-Generation Recommender Systems](https://dl.acm.org/doi/abs/10.1145/3589335.3651242),Single,General Recommendation,WWW'24
+MACRec,[MACRec: a Multi-Agent Collaboration Framework for Recommendation](https://dl.acm.org/doi/abs/10.1145/3626772.3657669),Multi,General Recommendation,SIGIR'24
+MACRS,[A Multi-Agent Conversational Recommender System](https://arxiv.org/pdf/2402.01135),Multi,Interactive Improvement,arXiv'24
+PMS,"[Personalized Recommendation Systems using Multimodal, Autonomous, Multi Agent Systems](https://arxiv.org/pdf/2410.19855)",Multi,Interactive Improvement,arXiv'24
+Rec4Agentverse,[Prospect Personalized Recommendation on Large Language Model-based Agent Platform](https://arxiv.org/pdf/2402.18240),Multi,Interactive Improvement,arXiv'24
+AutoConcierge,[Automated Interactive Domain-Specific Conversational Agents that Understand Human Dialogs](https://link.springer.com/chapter/10.1007/978-3-031-52038-9_13),Single,Domain-Specific,PADL'24
