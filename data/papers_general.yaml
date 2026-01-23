@@ -1,0 +1,102 @@
+# Multi-Agent Systems
+# Auto-generated from taxonomy.tex and BibTeX file
+
+- short_name: RecMind
+  title: 'RecMind: Large Language Model Powered Agent For Recommendation'
+  authors: Wang, Yancheng and Jiang, Ziyan and Chen, Zheng and Yang, Fan and Zhou, Yingxue and Cho, Eunah and Fan, Xing and Lu, Yanbin and Huang, Xiaojiang and Yang, Yingzhen
+  year: '2024'
+  venue: NAACL 2024
+  links:
+    doi: https://aclanthology.org/2024.findings-naacl.271/
+- short_name: MACRec
+  title: 'MACRec: a Multi-Agent Collaboration Framework for Recommendation'
+  authors: Wang, Zhefan and Yu, Yuanqing and Zheng, Wendi and Ma, Weizhi and Zhang, Min
+  year: '2024'
+  venue: Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval
+  links:
+    doi: https://dl.acm.org/doi/abs/10.1145/3626772.3657669
+- short_name: RecAI
+  title: 'RecAI: Leveraging Large Language Models for Next-Generation Recommender Systems'
+  authors: Lian, Jianxun and Lei, Yuxuan and Huang, Xu and Yao, Jing and Xu, Wei and Xie, Xing
+  year: '2024'
+  venue: 'Companion Proceedings of the ACM Web Conference 2024'
+  links:
+    doi: https://dl.acm.org/doi/abs/10.1145/3589335.3651242
+- short_name: AgentCF++
+  title: 'AgentCF++: Memory-enhanced LLM-based Agents for  Popularity-aware Cross-domain Recommendations'
+  authors: Liu, Jiahao and Gu, Shengkang and Li, Dongsheng and Zhang, Guangping and Han, Mingzhe and Gu, Hansu and Zhang, Peng and Lu, Tun and Shang, Li and Gu, Ning
+  year: '2025'
+  venue: Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval
+  links:
+    doi: https://dl.acm.org/doi/abs/10.1145/3726302.3730161
+- short_name: RAH
+  title: 'RAH! RecSys-Assistant-Human: A Human-Centered Recommendation Framework with LLM Agents'
+  authors: Shu, Yubo and Zhang, Haonan and Gu, Hansu and Zhang, Peng and Lu, Tun and Li, Dongsheng and Gu, Ning
+  year: '2024'
+  venue: IEEE Transactions on Computational Social Systems
+  links:
+    doi: https://ieeexplore.ieee.org/abstract/document/10572486
+- short_name: Zhang et al.
+  title: 'LLM-Powered User Simulator for Recommender System'
+  authors: Zhang, Zijian and Liu, Shuchang and Liu, Ziru and Zhong, Rui and Cai, Qingpeng and Zhao, Xiangyu and Zhang, Chunxu and Liu, Qidong and Jiang, Peng
+  year: '2025'
+  venue: Proceedings of the AAAI Conference on Artificial Intelligence
+  links:
+    doi: https://ojs.aaai.org/index.php/AAAI/article/view/33456
+- short_name: Jie Wang et al.
+  title: 'Reinforcement Learning-based Recommender Systems with  Large Language Models for State Reward and Action Modeling'
+  authors: Wang, Jie and Karatzoglou, Alexandros and Arapakis, Ioannis and Jose, Joemon M
+  year: '2024'
+  venue: Proceedings of the 47th International ACM SIGIR conference on research and development in information retrieval
+  links:
+    doi: https://dl.acm.org/doi/abs/10.1145/3626772.3657767
+- short_name: CSA
+  title: 'Contrastive State Augmentations for Reinforcement  Learning-Based Recommender Systems'
+  authors: Ren, Zhaochun and Huang, Na and Wang, Yidan and Ren, Pengjie and Ma, Jun and Lei, Jiahuan and Shi, Xinlei and Luo, Hengliang and Jose, Joemon and Xin, Xin
+  year: '2023'
+  venue: Proceedings of the 46th international ACM SIGIR conference on research and development in information retrieval
+  links:
+    doi: https://dl.acm.org/doi/abs/10.1145/3539618.3591656
+- short_name: KGLA
+  title: 'KGLA: Knowledge Graph Enhanced Language Agents for Recommendation'
+  authors: Guo, Taicheng and Liu, Chaochun and Wang, Hai and Mannam, Varun and Wang, Fang and Chen, Xin and Zhang, Xiangliang and Reddy, Chandan K
+  year: '2024'
+  venue: arXiv preprint arXiv:2410.19627
+  links:
+    arxiv: https://arxiv.org/pdf/2410.19627
+- short_name: STARec
+  title: 'STARec: An Efficient Agent Framework for Recommender Systems via Autonomous Deliberate Reasoning'
+  authors: Wu, Chenghao and Ren, Ruiyang and Zhang, Junjie and Wang, Ruirui and Ma, Zhongrui and Ye, Qi and Zhao, Wayne Xin
+  year: '2025'
+  venue: Proceedings of the 34th ACM International Conference on Information and Knowledge Management
+  links:
+    doi: https://dl.acm.org/doi/10.1145/3746252.3760995
+- short_name: MADREC
+  title: 'MADREC: A Multi-Aspect Driven LLM Agent for Explainable and Adaptive Recommendation'
+  authors: Park, Jiin and Kim, Misuk
+  year: '2025'
+  venue: arXiv preprint arXiv:2510.13371
+  links:
+    arxiv: https://arxiv.org/pdf/2510.13371
+- short_name: AgentDR
+  title: 'AgentDR: Dynamic Recommendation with Implicit Item-Item Relations via LLM-based Agents'
+  authors: Yang, Mingdai and Choudhary, Nurendra and Du, Jiangshu and Huang, Edward W and Yu, Philip S and Subbian, Karthik and Kourta, Danai
+  year: '2025'
+  venue: arXiv preprint arXiv:2510.05598
+  links:
+    arxiv: https://arxiv.org/pdf/2510.05598
+- short_name: RPP
+  title: 'Reinforced prompt personalization for recommendation with large language models'
+  authors: Mao, Wenyu and Wu, Jiancan and Chen, Weijian and Gao, Chongming and Wang, Xiang and He, Xiangnan
+  year: '2025'
+  venue: ACM Transactions on Information Systems
+  links:
+    doi: https://dl.acm.org/doi/full/10.1145/3716320
+- short_name: ARAG
+  title: 'ARAG: Agentic Retrieval Augmented Generation for  Personalized Recommendation'
+  authors: Maragheh, Reza Yousefi and Vadla, Pratheek and Gupta, Priyank and Zhao, Kai and Inan, Aysenur and Yao, Kehui and Xu, Jianpeng and Kanumala, Praveen and Cho, Jason and Kumar, Sushant
+  year: '2025'
+  venue: arXiv preprint arXiv:2506.21931
+  links:
+    arxiv: https://arxiv.org/pdf/2506.21931
+

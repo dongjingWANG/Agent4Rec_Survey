@@ -1,0 +1,122 @@
+# Multi-Agent Systems
+# Auto-generated from taxonomy.tex and BibTeX file
+
+- short_name: ToolRec
+  title: 'Let Me Do It For You: Towards LLM Empowered Recommendation via Tool Learning'
+  authors: Zhao, Yuyue and Wu, Jiancan and Wang, Xiang and Tang, Wei and Wang, Dingxian and De Rijke, Maarten
+  year: '2024'
+  venue: Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval
+  links:
+    doi: https://dl.acm.org/doi/abs/10.1145/3626772.3657828
+- short_name: Shuang et al.
+  title: 'An Extremely Data-efficient and Generative LLM-based Reinforcement Learning Agent for Recommenders'
+  authors: Feng, Shuang and Feng, Grace
+  year: '2024'
+  venue: arXiv preprint arXiv:2408.16032
+  links:
+    arxiv: https://arxiv.org/pdf/2408.16032
+- short_name: AutoConcierge
+  title: 'Automated Interactive Domain-Specific Conversational Agents that Understand Human Dialogs'
+  authors: Zeng, Yankai and Rajasekharan, Abhiramon and Padalkar, Parth and Basu, Kinjal and Arias, Joaqu{\'\i}n and Gupta, Gopal
+  year: '2024'
+  venue: International Symposium on Practical Aspects of Declarative Languages
+  links:
+    doi: https://link.springer.com/chapter/10.1007/978-3-031-52038-9_13
+- short_name: MMAgentRec
+  title: 'MMAgentRec, a personalized multi-modal recommendation agent with large language model'
+  authors: Xiao, Xiaochen
+  year: '2025'
+  venue: Scientific Reports
+  links:
+    doi: https://www.nature.com/articles/s41598-025-96458-w
+- short_name: MAS4POI
+  title: 'MAS4POI: a Multi-Agents Collaboration System  for Next POI Recommendation'
+  authors: Wu, Yuqian and Peng, Yuhong and Yu, Jiapeng and Lee, Raymond
+  year: '2025'
+  venue: 'Pacific-Asia Conference on Knowledge Discovery and Data Mining'
+  links:
+    doi: https://link.springer.com/chapter/10.1007/978-981-96-8180-8_28
+- short_name: DiscomfortFilter
+  title: 'Filtering discomforting recommendations with large language models'
+  authors: Liu, Jiahao and Shao, Yiyang and Zhang, Peng and Li, Dongsheng and Gu, Hansu and Chen, Chao and Du, Longzhi and Lu, Tun and Gu, Ning
+  year: '2025'
+  venue: Proceedings of the ACM on Web Conference 2025
+  links:
+    doi: https://dl.acm.org/doi/abs/10.1145/3696410.3714850
+- short_name: Lusifer
+  title: 'Lusifer: LLM-based User Simulated Feedback  Environment For online Recommender systems'
+  authors: Ebrat, Danial and Paradalis, Eli and Rueda, Luis
+  year: '2025'
+  venue: 2025 IEEE 4th International Conference on Computing and Machine Intelligence (ICMI)
+  links:
+    doi: https://ieeexplore.ieee.org/abstract/document/11141085/
+- short_name: RuleAgent
+  title: 'RuleAgent: Discovering Rules for Recommendation Denoising  with Autonomous Language Agents'
+  authors: Wang, Zongwei and Gao, Min and Yu, Junliang and Hou, Yupeng and Sadiq, Shazia and Yin, Hongzhi
+  year: '2025'
+  venue: arXiv preprint arXiv:2503.23374
+  links:
+    arxiv: https://arxiv.org/pdf/2503.23374
+- short_name: PEARL
+  title: 'PEARL: Preference Extraction with Exemplar Augmentation and Retrieval with LLM Agents'
+  authors: Malik, Vijit and Jagatap, Akshay and Puranik, Vinayak S and Majumder, Anirban
+  year: '2024'
+  venue: Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing
+  links:
+    doi: https://aclanthology.org/2024.emnlp-industry.112.pdf
+- short_name: CARTS
+  title: 'CARTS: Collaborative agents for recommendation textual summarization'
+  authors: Chen, Jiao and Yao, Kehui and Maragheh, Reza Yousefi and Zhao, Kai and Xu, Jianpeng and Cho, Jason and Korpeoglu, Evren and Kumar, Sushant and Achan, Kannan
+  year: '2025'
+  venue: arXiv preprint arXiv:2506.17765
+  links:
+    arxiv: http://arxiv.org/pdf/2506.17765
+- short_name: VRAgent-R1
+  title: 'VRAgent-R1: Boosting Video Recommendation with MLLM-based Agents via Reinforcement Learning'
+  authors: Chen, Siran and Chen, Boyu and Yu, Chenyun and Luo, Yuxiao and Yi, Ouyang and Cheng, Lei and Zhuo, Chengxiang and Li, Zang and Wang, Yali
+  year: '2025'
+  venue: arXiv preprint arXiv:2507.02626
+  links:
+    arxiv: https://arxiv.org/pdf/2507.02626
+- short_name: PUMA
+  title: 'Large Language Models Empowered Personalized Web Agents'
+  authors: Cai, Hongru and Li, Yongqi and Wang, Wenjie and Zhu, Fengbin and Shen, Xiaoyu and Li, Wenjie and Chua, Tat-Seng
+  year: '2025'
+  venue: Proceedings of the ACM on Web Conference 2025
+  links:
+    doi: https://dl.acm.org/doi/10.1145/3696410.3714842
+- short_name: CDA4Rec
+  title: Cloud-Device Collaborative Agents for Sequential Recommendation
+  authors: Long, Jing and Huang, Sirui and Huo, Huan and Chen, Tong and Yin, Hongzhi and Xu, Guandong
+  year: '2025'
+  venue: arXiv preprint arXiv:2509.01551
+  links:
+    arxiv: https://arxiv.org/pdf/2509.01551
+- short_name: REMI
+  title: 'REMI: A Novel Causal Schema Memory Architecture for Personalized Lifestyle Recommendation Agents'
+  authors: Raman, Vishal and Ragav, Abhijith and others
+  year: '2025'
+  venue: arXiv preprint arXiv:2509.06269
+  links:
+    doi: https://oars-workshop.github.io/papers/Raman2025.pdf
+- short_name: RouteLLM
+  title: Constraint-Aware Route Recommendation from Natural Language via Hierarchical LLM Agents
+  authors: Zhe, Tao and Liu, Rui and Memar, Fateme and Luo, Xiao and Fan, Wei and Ye, Xinyue and Peng, Zhongren and Wang, Dongjie
+  year: '2025'
+  venue: arXiv preprint arXiv:2510.06078
+  links:
+    arxiv: https://arxiv.org/pdf/2510.06078
+- short_name: MARC
+  title: 'MARC: Multimodal and Multi-Task Agentic Retrieval-Augmented Generation for Cold-Start Recommender System'
+  authors: Cho, Seung Hwan and Yang, Yujin and Baeck, Danik and Kim, Minjoo and Kim, Young-Min and Lee, Heejung and Park, Sangjin
+  year: '2025'
+  venue: arXiv preprint arXiv:2511.08181
+  links:
+    arxiv: https://arxiv.org/abs/2511.08181
+- short_name: AFL
+  title: 'Agentic Feedback Loop Modeling Improves Recommendation  and User Simulation'
+  authors: Cai, Shihao and Zhang, Jizhi and Bao, Keqin and Gao, Chongming and Wang, Qifan and Feng, Fuli and He, Xiangnan
+  year: '2025'
+  venue: Proceedings of the 48th international ACM SIGIR conference on research and development in Information Retrieval
+  links:
+    doi: https://dl.acm.org/doi/abs/10.1145/3726302.3729893

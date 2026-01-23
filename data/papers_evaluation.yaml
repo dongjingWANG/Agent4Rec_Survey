@@ -1,0 +1,108 @@
+# Single-Agent Systems
+# Auto-generated from taxonomy.tex and BibTeX file
+
+- short_name: iEvaLM
+  title: 'Rethinking the Evaluation for Conversational Recommendation  in the Era of Large Language Models'
+  authors: Wang, Xiaolei and Tang, Xinyu and Zhao, Wayne Xin and Wang, Jingyuan and Wen, Ji-Rong
+  year: '2023'
+  venue: arXiv preprint arXiv:2305.13112
+  links:
+    arxiv: https://arxiv.org/pdf/2305.13112
+- short_name: BiLLP
+  title: 'Large Language Models are Learnable Planners for Long-Term  Recommendation'
+  authors: Shi, Wentao and He, Xiangnan and Zhang, Yang and Gao, Chongming and Li, Xinyue and Zhang, Jizhi and Wang, Qifan and Feng, Fuli
+  year: '2024'
+  venue: Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval
+  links:
+    doi: https://dl.acm.org/doi/abs/10.1145/3626772.3657683
+- short_name: RecAgent
+  title: 'User Behavior Simulation with Large Language Model based Agents'
+  authors: Wang, Lei and Zhang, Jingsen and Yang, Hao and Chen, Zhi-Yuan and Tang, Jiakai and Zhang, Zeyu and Chen, Xu and Lin, Yankai and Sun, Hao and Song, Ruihua and others
+  year: '2025'
+  venue: ACM Transactions on Information Systems
+  links:
+    doi: https://dl.acm.org/doi/full/10.1145/3708985
+- short_name: DrunkAgent
+  title: 'Get the Agents Drunk: Memory Perturbations in Autonomous  Agent-based Recommender Systems'
+  authors: Yang, Shiyi and Hu, Zhibo and Wang, Chen and Yu, Tong and Xu, Xiwei and Zhu, Liming and Yao, Lina
+  year: '2025'
+  venue: arXiv e-prints
+  links:
+    arxiv: https://arxiv.org/pdf/2503.23804
+- short_name: SimpleUserSim
+  title: 'How Reliable is Your Simulator? Analysis on the Limitations of  Current LLM-based User Simulators for Conversational  Recommendation'
+  authors: Zhu, Lixi and Huang, Xiaowen and Sang, Jitao
+  year: '2024'
+  venue: Companion Proceedings of the ACM Web Conference 2024
+  links:
+    doi: https://dl.acm.org/doi/abs/10.1145/3589335.3651955
+- short_name: CreAgent
+  title: 'CreAgent: Towards Long-Term Evaluation of Recommender System under Platform-Creator Information Asymmetry'
+  authors: Ye, Xiaopeng and Xu, Chen and Sun, Zhongxiang and Xu, Jun and Wang, Gang and Dong, Zhenhua and Wen, Ji-Rong
+  year: '2025'
+  venue: arXiv preprint arXiv:2502.07307
+  links:
+    arxiv: https://arxiv.org/pdf/2502.07307
+- short_name: Yoon et al.
+  title: 'Evaluating Large Language Models as Generative User Simulators for  Conversational Recommendation'
+  authors: Yoon, Se-eun and He, Zhankui and Echterhoff, Jessica and McAuley, Julian
+  year: '2024'
+  venue: Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics
+  links:
+    doi: https://aclanthology.org/2024.naacl-long.83/
+- short_name: USimAgent
+  title: 'USimAgent: Large Language Models for Simulating Search Users'
+  authors: Zhang, Erhan and Wang, Xingzhu and Gong, Peiyuan and Lin, Yankai and Mao, Jiaxin
+  year: '2024'
+  venue: Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval
+  links:
+    doi: https://dl.acm.org/doi/abs/10.1145/3626772.3657963
+- short_name: Chirag Shah et al.
+  title: 'Dynamic Evaluation Framework for Personalized and Trustworthy Agents: A Multi-Session Approach to Preference Adaptability'
+  authors: Shah, Chirag and Joho, Hideo and Kaur, Kirandeep and Dammu, Preetam Prabhu Srikar
+  year: '2025'
+  venue: arXiv preprint arXiv:2504.06277
+  links:
+    arxiv: https://www.arxiv.org/pdf/2504.06277
+- short_name: TextSimu
+  title: 'ID-Free Not Risk-Free: LLM-Powered Agents Unveil Risks in  ID-Free Recommender Systems'
+  authors: Wang, Zongwei and Gao, Min and Yu, Junliang and Gao, Xinyi and Nguyen, Quoc Viet Hung and Sadiq, Shazia and Yin, Hongzhi
+  year: '2025'
+  venue: Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval
+  links:
+    doi: https://dl.acm.org/doi/abs/10.1145/3726302.3730003
+- short_name: RecUserSim
+  title: 'RecUserSim: A Realistic and Diverse User Simulator for  Evaluating Conversational Recommender Systems'
+  authors: Chen, Luyu and Dai, Quanyu and Zhang, Zeyu and Feng, Xueyang and Zhang, Mingyu and Tang, Pengcheng and Chen, Xu and Zhu, Yue and Dong, Zhenhua
+  year: '2025'
+  venue: Companion Proceedings of the ACM on Web Conference 2025
+  links:
+    doi: https://dl.acm.org/doi/pdf/10.1145/3701716.3715258
+- short_name: PEPPER
+  title: 'Stop Playing the Guessing Game ! Target-free User Simulation for Evaluating Conversational Recommender Systems'
+  authors: Kim, Sunghwan and Kim, Tongyoung and Seo, Kwangwook and Yeo, Jinyoung and Lee, Dongha
+  year: '2024'
+  venue: arXiv preprint arXiv:2411.16160
+  links:
+    arxiv: https://www.arxiv.org/pdf/2411.16160
+- short_name: Agent4Rec
+  title: 'On Generative Agents in Recommendation'
+  authors: Zhang, An and Chen, Yuxin and Sheng, Leheng and Wang, Xiang and Chua, Tat-Seng
+  year: '2024'
+  venue: Proceedings of the 47th international ACM SIGIR conference on research and development in Information Retrieval
+  links:
+    doi: https://dl.acm.org/doi/abs/10.1145/3626772.3657844
+- short_name: SUBER
+  title: 'SUBER: An RL Environment with Simulated  Human Behavior for Recommender Systems'
+  authors: Corecco, Nathan and Piatti, Giorgio and Lanzend{\"o}rfer, Luca A and Fan, Flint Xiaofeng and Wattenhofer, Roger
+  year: '2024'
+  venue: arXiv preprint arXiv:2406.01631
+  links:
+    arxiv: https://arxiv.org/pdf/2406.01631
+- short_name: CheatAgent
+  title: 'CheatAgent: Attacking LLM-Empowered Recommender Systems via LLM Agent'
+  authors: Ning, Liang-bo and Wang, Shijie and Fan, Wenqi and Li, Qing and Xu, Xin and Chen, Hao and Huang, Feiran
+  year: '2024'
+  venue: Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining
+  links:
+    doi: https://dl.acm.org/doi/10.1145/3637528.3671837

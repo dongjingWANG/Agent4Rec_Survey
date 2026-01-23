@@ -1,0 +1,87 @@
+# Multi-Agent Systems
+# Auto-generated from taxonomy.tex and BibTeX file
+
+- short_name: iAgent
+  title: ' iAgent: LLM Agent as a Shield between User and Recommender Systems'
+  authors: Xu, Wujiang and Shi, Yunxiao and Liang, Zujie and Ning, Xuying and Mei, Kai and Wang, Kun and Zhu, Xi and Xu, Min and Zhang, Yongfeng
+  year: '2025'
+  venue: arXiv preprint arXiv:2502.14662
+  links:
+    arxiv: https://arxiv.org/pdf/2502.14662
+- short_name: InteRecAgent
+  title: 'Recommender AI Agent: Integrating Large Language Models for Interactive Recommendations'
+  authors: Huang, Xu and Lian, Jianxun and Lei, Yuxuan and Yao, Jing and Lian, Defu and Xie, Xing
+  year: '2025'
+  venue: ACM Transactions on Information Systems
+  links:
+    doi: https://dl.acm.org/doi/full/10.1145/3731446
+- short_name: MACRS
+  title: 'A Multi-Agent Conversational Recommender System'
+  authors: Fang, Jiabao and Gao, Shen and Ren, Pengjie and Chen, Xiuying and Verberne, Suzan and Ren, Zhaochun
+  year: '2024'
+  venue: arXiv preprint arXiv:2402.01135
+  links:
+    arxiv: https://arxiv.org/pdf/2402.01135
+- short_name: Rec4Agentverse
+  title: 'Prospect Personalized Recommendation on Large Language Model-based Agent Platform'
+  authors: Zhang, Jizhi and Bao, Keqin and Wang, Wenjie and Zhang, Yang and Shi, Wentao and Xu, Wanhong and Feng, Fuli and Chua, Tat-Seng
+  year: '2024'
+  venue: arXiv preprint arXiv:2402.18240
+  links:
+    arxiv: https://arxiv.org/pdf/2402.18240
+- short_name: TAIRA
+  title: 'Thought-Augmented Planning for LLM-Powered Interactive Recommender Agent'
+  authors: Yu, Haocheng and Wu, Yaxiong and Wang, Hao and Guo, Wei and Liu, Yong and Li, Yawen and Ye, Yuyang and Du, Junping and Chen, Enhong
+  year: '2025'
+  venue: arXiv preprint arXiv:2506.23485
+  links:
+    arxiv: https://arxiv.org/abs/2506.23485
+- short_name: MATCHA
+  title: 'MATCHA: Can Multi-Agent Collaboration Build a Trustworthy  Conversational Recommender?'
+  authors: Hui, Zheng and Wei, Xiaokai and Jiang, Yexi and Gao, Kevin and Wang, Chen and Ong, Frank and Yoon, Se-eun and Pareek, Rachit and Gong, Michelle
+  year: '2025'
+  venue: arXiv preprint arXiv:2504.20094
+  links:
+    arxiv: https://arxiv.org/pdf/2504.20094
+- short_name: CSHI
+  title: 'A LLM-based Controllable, Scalable, Human-Involved User Simulator Framework for Conversational Recommender Systems'
+  authors: Zhu, Lixi and Huang, Xiaowen and Sang, Jitao
+  year: '2025'
+  venue: Proceedings of the ACM on Web Conference 2025
+  links:
+    doi: https://dl.acm.org/doi/abs/10.1145/3696410.3714858
+- short_name: iALP
+  title: 'Large Language Model driven Policy Exploration for  Recommender Systems'
+  authors: Wang, Jie and Karatzoglou, Alexandros and Arapakis, Ioannis and Jose, Joemon M
+  year: '2025'
+  venue: Proceedings of the Eighteenth ACM International Conference on Web Search and Data Mining
+  links:
+    doi: https://dl.acm.org/doi/abs/10.1145/3701551.3703496
+- short_name: CORE
+  title: 'Lending Interaction Wings to Recommender Systems with Conversational Agents'
+  authors: Jin, Jiarui and Chen, Xianyu and Ye, Fanghua and Yang, Mengyue and Feng, Yue and Zhang, Weinan and Yu, Yong and Wang, Jun
+  year: '2023'
+  venue: Advances in Neural Information Processing Systems
+  links:
+    doi: https://proceedings.neurips.cc/paper_files/paper/2023/hash/58cd3b02902d79aea4b3b603fb0d0941-Abstract-Conference.html
+- short_name: ChatCRS
+  title: 'Incorporating External Knowledge and Goal Guidance for LLM-based Conversational Recommender Systems'
+  authors: Li, Chuang and Deng, Yang and Hu, Hengchang and Kan, Min-Yen and Li, Haizhou
+  year: '2025'
+  venue: NAACL 2025
+  links:
+    doi: https://aclanthology.org/2025.findings-naacl.17/
+- short_name: AgentCF
+  title: ' AgentCF: Collaborative Learning with Autonomous Language  Agents for Recommender Systems'
+  authors: Zhang, Junjie and Hou, Yupeng and Xie, Ruobing and Sun, Wenqi and McAuley, Julian and Zhao, Wayne Xin and Lin, Leyu and Wen, Ji-Rong
+  year: '2024'
+  venue: Proceedings of the ACM Web Conference 2024
+  links:
+    doi: https://dl.acm.org/doi/abs/10.1145/3589334.3645537
+- short_name: PMS
+  title: 'Personalized Recommendation Systems using Multimodal, Autonomous, Multi Agent Systems'
+  authors: Thakkar, Param and Yadav, Anushka
+  year: '2024'
+  venue: arXiv preprint arXiv:2410.19855
+  links:
+    arxiv: https://arxiv.org/pdf/2410.19855

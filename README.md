@@ -22,9 +22,9 @@ In our survey,  we offers a comprehensive review of recent research on LLM-power
 ### The comparison between this work and existing surveys.
 | **Paper** | **Where** | **What** |**Why** | **How** |**Pipeline** |**Highlights** |
 | :------------- | :----------------------------------------------------------- | :----------------- | :------- |:------- |:------- |:------- |
-| Recommender Systems Meet Large Language Model Agents: A Survey |  |✅|  |✅| (1) Agents for RS (2) RS for Agents (3) Trustworthy Agents and RS | analyzes how the LLM agent module supports recommendation systems and how recommendation systems,in turn, optimize the operation of these agents. |
-| A Survey on LLM-powered Agents for Recommender Systems |  |✅|  |✅| (1) Recommender-oriented approaches (2) Interaction-oriented approaches (3) Simulation-oriented approaches | identifies three key paradigms in current research and explores their architectural components and evaluation frameworks.|
-| A Survey of Large Language Model Empowered Agents for Recommendation and Search: Towards Next-Generation Information Retrieval |  |✅|  |✅| (1) User Interaction (2) Item Representation (3) System Integration (4) Environment Simulation | emphasizes how LLM-powered agents improve recommender systems by enabling deep semantic understanding, dynamic task decomposition, and interactive user engagement |
+| Recommender Systems Meet Large Language Model Agents: A Survey | ❌ |✅| ❌ |✅| (1) Agents for RS (2) RS for Agents (3) Trustworthy Agents and RS | analyzes how the LLM agent module supports recommendation systems and how recommendation systems,in turn, optimize the operation of these agents. |
+| A Survey on LLM-powered Agents for Recommender Systems | ❌ |✅| ❌ |✅| (1) Recommender-oriented approaches (2) Interaction-oriented approaches (3) Simulation-oriented approaches | identifies three key paradigms in current research and explores their architectural components and evaluation frameworks.|
+| A Survey of Large Language Model Empowered Agents for Recommendation and Search: Towards Next-Generation Information Retrieval | ❌ |✅| ❌ |✅| (1) User Interaction (2) Item Representation (3) System Integration (4) Environment Simulation | emphasizes how LLM-powered agents improve recommender systems by enabling deep semantic understanding, dynamic task decomposition, and interactive user engagement |
 | **Ours** |✅|✅|✅|✅| (1) Where agents are applied (2) What agents are used (3) Why agents are used (4) How agents are designed | proposes four key questions—"Where," "What," "Why," and "How" to conduct a comprehensive analysis of the existing academic research. |
 ## Key Contributions
 1. A comprehensive review of the application of agents in RS across four dimensions from 2023 to 2025.
@@ -161,7 +161,7 @@ We examine the system architecture, cat egorizing it into single-agent systems a
 
 **RecMind**: RecMind: Large Language Model Powered Agent For Recommendation[![DOI](https://img.shields.io/badge/DOI-paper-00599C?logo=doi&logoColor=white)](https://aclanthology.org/2024.findings-naacl.271/)
 
-**MADREC**: MADREC:AMulti-Aspect Driven LLM Agent for Explainable and Adaptive Recommendation[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2510.13371)
+**MADREC**: MADREC: A Multi-Aspect Driven LLM Agent for Explainable and Adaptive Recommendation[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2510.13371)
 
 **PUMA**: Large Language Models Empowered Personalized Web Agents[![DOI](https://img.shields.io/badge/DOI-paper-00599C?logo=doi&logoColor=white)](https://dl.acm.org/doi/10.1145/3696410.3714842)
 
@@ -229,7 +229,7 @@ We examine the system architecture, cat egorizing it into single-agent systems a
 
 **ChatCRS**: Incorporating External Knowledge and Goal Guidance for LLM-based Conversational Recommender Systems[![DOI](https://img.shields.io/badge/DOI-paper-00599C?logo=doi&logoColor=white)](https://aclanthology.org/2025.findings-naacl.17/)
 
-**MMAgentRec**: MMAgentRec, a personalized multi-modal recommendation agent with large language model[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://www.nature.com/articles/s41598-025-96458-w)
+**MMAgentRec**: MMAgentRec, a personalized multi-modal recommendation agent with large language model[![DOI](https://img.shields.io/badge/DOI-paper-00599C?logo=doi&logoColor=white)](https://www.nature.com/articles/s41598-025-96458-w)
 
 **CDA4Rec**: Cloud-Device Collaborative Agents for Sequential Recommendation[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2509.01551)
 
@@ -237,7 +237,7 @@ We examine the system architecture, cat egorizing it into single-agent systems a
 
 **MARC**: MARC: Multimodal and Multi-Task Agentic Retrieval-Augmented Generation for Cold-Start Recommender System[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2511.08181)
 
-**MATCHA**: MATCHA:CanMulti-Agent Collaboration Build a Trustworthy  Conversational Recommender?[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2504.20094)
+**MATCHA**: MATCHA: Can Multi-Agent Collaboration Build a Trustworthy  Conversational Recommender?[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/pdf/2504.20094)
 
 **Agent4Rec**: On Generative Agents in Recommendation[![DOI](https://img.shields.io/badge/DOI-paper-00599C?logo=doi&logoColor=white)](https://dl.acm.org/doi/abs/10.1145/3626772.3657844)
 
@@ -317,7 +317,7 @@ We investigate the underlying rationale for the design of each agent. This analy
 
 **AutoConcierge**：Automated Interactive Domain-Specific Conversational Agents that Understand Human Dialogs[![DOI](https://img.shields.io/badge/DOI-paper-00599C?logo=doi&logoColor=white)](https://link.springer.com/chapter/10.1007/978-3-031-52038-9_13)
 
-**MMAgentRec**: MMAgentRec, a personalized multi-modal recommendation agent with large language model[![arXiv](https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&logoColor=white)](https://www.nature.com/articles/s41598-025-96458-w)
+**MMAgentRec**: MMAgentRec, a personalized multi-modal recommendation agent with large language model[![DOI](https://img.shields.io/badge/DOI-paper-00599C?logo=doi&logoColor=white)](https://www.nature.com/articles/s41598-025-96458-w)
 
 **MAS4POI**: MAS4POI: a Multi-Agents Collaboration System  for Next POI Recommendation[![DOI](https://img.shields.io/badge/DOI-paper-00599C?logo=doi&logoColor=white)](https://link.springer.com/chapter/10.1007/978-981-96-8180-8_28)
 
