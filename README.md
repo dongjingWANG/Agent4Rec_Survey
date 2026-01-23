@@ -1,6 +1,6 @@
 
 
-# Agent4Rec_Survey
+# ✨ Agent4Rec_Survey
 
 <div align="center">
 
@@ -10,7 +10,10 @@ A collection of resources and papers of **LLM-Powered Agents for Recommender Sys
 
 </div>
 
+------
+
 ## 📖 Abstract
+
 In our survey,  we offers a comprehensive review of recent research on LLM-powered agents in recommendation systems from the past three years, examining four key dimensions: where agents are applied, what agents are used, why agents are used, and how agents are designed.For the **"WHERE"** question, we explore integration strategies for LLM-powered agents and recommendation systems, categorized as Agent as Rec (primary entity), Agent for Rec (interacting to enhance performance), and Agent in Rec (embedded in specific process stages). For the **"WHAT"** question, we categorize the systems according to the quantity of agents they include, distinguishing between single-agent and multi-agent setups. For the **"WHY"** question, we categorize systems according to the specific issues they tackle within improving general recommendations, domain-specific recommendations, interactive recommendations, and system evaluation. For the **"HOW"** question, we highlights optimization approaches targeting the agents' core components—Profile, Memory, Planning, and Action Modules—to boost overall system performance.
 
 <div align="center">
@@ -19,6 +22,10 @@ In our survey,  we offers a comprehensive review of recent research on LLM-power
 
 </div>
 
+------
+
+<!-- START TABLES -->
+
 ### The comparison between this work and existing surveys.
 | **Paper** | **Where** | **What** |**Why** | **How** |**Pipeline** |**Highlights** |
 | :------------- | :----------------------------------------------------------- | :----------------- | :------- |:------- |:------- |:------- |
@@ -26,10 +33,17 @@ In our survey,  we offers a comprehensive review of recent research on LLM-power
 | A Survey on LLM-powered Agents for Recommender Systems | ❌ |✅| ❌ |✅| (1) Recommender-oriented approaches (2) Interaction-oriented approaches (3) Simulation-oriented approaches | identifies three key paradigms in current research and explores their architectural components and evaluation frameworks.|
 | A Survey of Large Language Model Empowered Agents for Recommendation and Search: Towards Next-Generation Information Retrieval | ❌ |✅| ❌ |✅| (1) User Interaction (2) Item Representation (3) System Integration (4) Environment Simulation | emphasizes how LLM-powered agents improve recommender systems by enabling deep semantic understanding, dynamic task decomposition, and interactive user engagement |
 | **Ours** |✅|✅|✅|✅| (1) Where agents are applied (2) What agents are used (3) Why agents are used (4) How agents are designed | proposes four key questions—"Where," "What," "Why," and "How" to conduct a comprehensive analysis of the existing academic research. |
+<!-- END TABLES -->
+
+------
+
 ## Key Contributions
+
 1. A comprehensive review of the application of agents in RS across four dimensions from 2023 to 2025.
 2. A novel system taxonomy is proposed, categorizing the integration strategies of LLM-powered agents in recommendation systems into three paradigms.
 3. Challenges for recommendation agents include computational cost, confidence, data security, robustness, and scalability among multiple agents.
+
+------
 
 <!-- START EXPLORE -->
 
@@ -51,7 +65,9 @@ In our survey,  we offers a comprehensive review of recent research on LLM-power
 - 📄 **[Full Paper](https://deepsoftwareanalytics.github.io/Awesome-Issue-Resolution/paper/)**: Read the complete survey paper
   <!-- END EXPLORE -->
 
-<!-- START PAPERS -->
+------
+
+<!-- START TABLES -->
 
 ## Paper List
 
@@ -137,7 +153,11 @@ We analyze three integration strategies for LLM agents and recommender systems: 
 | AgentCF | [AgentCF: Collaborative Learning with Autonomous Language  Agents for Recommender Systems](https://dl.acm.org/doi/abs/10.1145/3589334.3645537) |Multi | Interactive Improvement | WWW'24 |
 | CSA | [Contrastive State Augmentations for Reinforcement  Learning-Based Recommender Systems](https://dl.acm.org/doi/abs/10.1145/3539618.3591656) | Single | General Recommendation |SIGIR'23 |
 
+<!-- END TABLES -->
 
+------
+
+<!-- START PAPERS -->
 
 ### 🛠️WHAT
 
@@ -403,6 +423,12 @@ We investigate the underlying rationale for the design of each agent. This analy
 
 **CheatAgent**:   CheatAgent: Attacking LLM-Empowered Recommender Systems via LLM Agent[![DOI](https://img.shields.io/badge/DOI-paper-00599C?logo=doi&logoColor=white)](https://dl.acm.org/doi/10.1145/3637528.3671837)
 
+<!-- END PAPERS -->
+
+------
+
+<!-- START TABLES -->
+
 ### 📋HOW
 
 We analyzed the optimization modules of each agent, including the Profile Module, Memory Module, Planning Module, and Action Module.
@@ -468,7 +494,53 @@ We analyzed the optimization modules of each agent, including the Profile Module
 |        MARC        |         ❌          |         ❌         |          ✅          |         ✅         |    ✅     |                 GPT-4o                  | cocktails, ingredients and instructions |
 |        RPP         |         ❌          |         ❌         |          ❌          |         ✅         |    ✅     |             LLaMa2-7B-chat              |          ML-1M, Games, Lastfm           |
 
+------
 
+<!-- END TABLES -->
+
+------
+
+<!-- START USAGE -->
+
+## 🚀 Quick Start
+
+
+**Windows:**
+
+```cmd
+run.bat
+```
+
+**Linux/Mac:**
+
+```bash
+chmod +x run.sh
+./run.sh
+```
+
+**Options:**
+
+- `[1]` Add Paper - Interactive paper entry with duplicate check
+- `[2]` Add Table - Update statistical tables
+- `[3]` Batch Import - Import papers from CSV template
+- `[4]` Sync & Render - Render website and sync README
+
+------
+
+<!-- END USAGE -->
+
+------
+
+## 🤝 Contributing
+
+We welcome contributions! To add new papers or tables:
+
+1. Fork this repository
+2. Run `run.bat` (Windows) or `run.sh` (Linux/Mac)
+3. Or manually edit YAML/CSV files in `data/` directory
+4. Submit a PR with your changes
+
+------
 
 ## 🙏 Acknowledgements
 
