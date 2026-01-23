@@ -1,0 +1,66 @@
+site_name: Agent4Rec Survey
+site_description: A Comprehensive Survey of LLM-Powered Agents for Recommender Systems
+site_url: https://yourusername.github.io/Agent4Rec_Survey/
+
+repo_name: yourusername/Agent4Rec_Survey
+repo_url: https://github.com/yourusername/Agent4Rec_Survey
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+    - toc.integrate
+    - navigation.indexes
+    - navigation.expand
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/custom.css
+
+docs_dir: docs
+
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: ignore
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 4
+      title: On this page
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.extra
+
+nav:
+  - Home: index.md
+  - About: about.md

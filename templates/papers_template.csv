@@ -1,0 +1,5 @@
+category_id,short_name,title,authors,venue,year,arxiv,github,huggingface,doi,website
+# Valid categories: general, domain_specific, interactive, evaluation, single_agent, multi_agent
+# Example entries:
+general,RecMind,RecMind: Large Language Model Powered Agent For Recommendation,Authors et al.,NAACL'24,2024,https://arxiv.org/...,https://github.com/...,-,-,-
+single_agent,PUMA,Large Language Models Empowered Personalized Web Agents,Authors et al.,WWW'25,2025,-,https://github.com/...,-,https://doi.org/...,-
