@@ -29,7 +29,6 @@ theme:
     - content.code.copy
     - search.suggest
     - search.highlight
-    - toc.integrate
     - navigation.indexes
     - navigation.expand
   icon:
@@ -62,4 +61,6 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Papers: papers.md
+  - Tables: tables.md
   - About: about.md
