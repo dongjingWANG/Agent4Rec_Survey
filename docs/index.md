@@ -57,8 +57,8 @@ For the **"HOW"** question, we highlights optimization approaches targeting the 
 
 ## 📚 Resources
 
-- [GitHub Repository](https://github.com/yourusername/Agent4Rec_Survey)
-- [Full Paper List](https://github.com/yourusername/Agent4Rec_Survey#paper-list)
+- [GitHub Repository](https://github.com/dongjingWANG/Agent4Rec_Survey)
+- [Full Paper List](https://github.com/dongjingWANG/Agent4Rec_Survey#paper-list)
 
 ## 🤝 Contributing
 

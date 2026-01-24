@@ -61,10 +61,6 @@ Papers are categorized based on:
 - **Categories**: 6 main categories
 - **Venues**: 20+ conferences and journals
 
-## 👥 Authors
-
-[Authors to be added]
-
 ## 🙏 Acknowledgements
 
 We would like to express our sincere gratitude to:
@@ -79,8 +75,7 @@ We would like to express our sincere gratitude to:
 
 If you have any questions or suggestions, please contact us through:
 
-- 💬 **GitHub Issues**: [Open an issue](https://github.com/yourusername/Agent4Rec_Survey/issues)
-- 📧 **Email**: [your-email@example.com]
+- 💬 **GitHub Issues**: [Open an issue](https://github.com/dongjingWANG/Agent4Rec_Survey/issues)
 
 ---
 
