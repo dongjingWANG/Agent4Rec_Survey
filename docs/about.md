@@ -82,10 +82,6 @@ If you have any questions or suggestions, please contact us through:
 - 💬 **GitHub Issues**: [Open an issue](https://github.com/yourusername/Agent4Rec_Survey/issues)
 - 📧 **Email**: [your-email@example.com]
 
-## 📄 Citation
-
-If you find this survey helpful for your research or project, please consider citing our work. See the [Citation](cite.md) page for details.
-
 ---
 
 **Last Updated**: January 2025
