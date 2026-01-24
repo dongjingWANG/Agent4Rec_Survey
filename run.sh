@@ -86,10 +86,10 @@ while true; do
             echo ""
             echo "[1/4] Rendering papers..."
             python scripts/render_papers.py || { echo -e "${RED}❌ Failed${NC}"; read -p "Press Enter to continue..."; continue; }
-            echo "[2/4] Generating citation..."
-            python scripts/generate_citation.py || { echo -e "${RED}❌ Failed${NC}"; read -p "Press Enter to continue..."; continue; }
-            echo "[3/4] Syncing README..."
+            echo "[2/4] Syncing README..."
             python scripts/sync_readme.py || { echo -e "${RED}❌ Failed${NC}"; read -p "Press Enter to continue..."; continue; }
+            echo "[3/4] Generating documentation pages..."
+            python scripts/generate_docs.py || { echo -e "${RED}❌ Failed${NC}"; read -p "Press Enter to continue..."; continue; }
             echo "[4/4] Building website..."
             if command -v mkdocs &> /dev/null; then
                 mkdocs build
