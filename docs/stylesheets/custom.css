@@ -1,0 +1,54 @@
+/* Custom styles for Agent4Rec Survey */
+
+/* Fix TOC (Table of Contents) scrolling issue */
+.md-sidebar--secondary {
+    overflow-y: auto !important;
+    max-height: calc(100vh - 3.6rem) !important;
+}
+
+.md-sidebar__scrollwrap {
+    overflow-y: auto !important;
+    max-height: calc(100vh - 3.6rem) !important;
+}
+
+/* Ensure TOC is scrollable on papers page */
+.md-nav--secondary {
+    overflow-y: auto !important;
+    max-height: calc(100vh - 8rem) !important;
+}
+
+/* Better scrollbar styling */
+.md-sidebar::-webkit-scrollbar,
+.md-sidebar__scrollwrap::-webkit-scrollbar,
+.md-nav--secondary::-webkit-scrollbar {
+    width: 8px;
+}
+
+.md-sidebar::-webkit-scrollbar-track,
+.md-sidebar__scrollwrap::-webkit-scrollbar-track,
+.md-nav--secondary::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.md-sidebar::-webkit-scrollbar-thumb,
+.md-sidebar__scrollwrap::-webkit-scrollbar-thumb,
+.md-nav--secondary::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.md-sidebar::-webkit-scrollbar-thumb:hover,
+.md-sidebar__scrollwrap::-webkit-scrollbar-thumb:hover,
+.md-nav--secondary::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure proper spacing for long TOC */
+.md-nav__item {
+    padding: 0.2rem 0;
+}
+
+/* Make sure nested items are visible */
+.md-nav__item .md-nav__item {
+    margin-left: 0.8rem;
+}
