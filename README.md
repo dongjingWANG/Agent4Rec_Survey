@@ -1,10 +1,16 @@
-
-
 # ✨ Agent4Rec_Survey
 
 <div align="center">
-
 A collection of resources and papers of **LLM-Powered Agents for Recommender Systems** (Agent4Rec).
+
+[![GitHub Stars](https://img.shields.io/github/stars/dongjingWANG/Agent4Rec_Survey?style=for-the-badge&logo=github&color=4c1)](https://github.com/dongjingWANG/Agent4Rec_Survey)
+[![Forks](https://img.shields.io/github/forks/dongjingWANG/Agent4Rec_Survey?style=for-the-badge&logo=github&color=blue)](https://github.com/dongjingWANG/Agent4Rec_Survey/fork)
+
+[![Contributors](https://img.shields.io/github/contributors/dongjingWANG/Agent4Rec_Survey?style=for-the-badge&color=green&logo=github)](https://github.com/dongjingWANG/Agent4Rec_Survey/graphs/contributors)
+
+**🎙️ Interactive Exploration:**
+
+[![Issues](https://img.shields.io/badge/💡_GitHub-Open_Issue-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dongjingWANG/Agent4Rec_Survey/issues)
 
 <img src="docs/images/fig_agent.png" width="60%">
 
@@ -551,6 +557,8 @@ We would like to express our sincere gratitude to:
 - All **contributors** who have helped improve this project through issues, pull requests, and discussions.
 
 - The **open-source community** for developing the amazing tools and frameworks that made this project possible.
+
+- The inspiration behind the **DeepSoftwareAnalytics** team's approach to building and collaborating on GitHub.
 
 ------
 
