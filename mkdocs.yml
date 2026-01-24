@@ -1,9 +1,9 @@
 site_name: Agent4Rec Survey
 site_description: A Comprehensive Survey of LLM-Powered Agents for Recommender Systems
-site_url: https://yourusername.github.io/Agent4Rec_Survey/
+site_url: https://dongjingWANG.github.io/Agent4Rec_Survey/
 
-repo_name: yourusername/Agent4Rec_Survey
-repo_url: https://github.com/yourusername/Agent4Rec_Survey
+repo_name: dongjingWANG/Agent4Rec_Survey
+repo_url: https://github.com/dongjingWANG/Agent4Rec_Survey
 
 theme:
   name: material
