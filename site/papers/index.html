@@ -1,0 +1,2448 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A Comprehensive Survey of LLM-Powered Agents for Recommender Systems">
+      
+      
+      
+        <link rel="canonical" href="https://dongjingWANG.github.io/Agent4Rec_Survey/papers/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../tables/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Papers - Agent4Rec Survey</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#paper-list" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Agent4Rec Survey" class="md-header__button md-logo" aria-label="Agent4Rec Survey" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Agent4Rec Survey
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Papers
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dongjingWANG/Agent4Rec_Survey" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dongjingWANG/Agent4Rec_Survey
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Papers
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../tables/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tables
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Agent4Rec Survey" class="md-nav__button md-logo" aria-label="Agent4Rec Survey" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Agent4Rec Survey
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dongjingWANG/Agent4Rec_Survey" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dongjingWANG/Agent4Rec_Survey
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Papers
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Papers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📈 General Recommendations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📈 General Recommendations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recmind" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RecMind
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macrec" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MACRec
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RecAI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agentcf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AgentCF++
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rah" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RAH
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zhang-et-al" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zhang et al.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jie-wang-et-al" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jie Wang et al.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kgla" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        KGLA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#starec" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        STARec
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#madrec" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MADREC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agentdr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AgentDR
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rpp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RPP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ARAG
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#domain-specific-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔍 Domain-Specific Recommendations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔍 Domain-Specific Recommendations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#toolrec" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ToolRec
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shuang-et-al" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shuang et al.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autoconcierge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AutoConcierge
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mmagentrec" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MMAgentRec
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mas4poi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MAS4POI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#discomfortfilter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DiscomfortFilter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lusifer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lusifer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ruleagent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RuleAgent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pearl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PEARL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#carts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CARTS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vragent-r1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VRAgent-R1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#puma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PUMA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cda4rec" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CDA4Rec
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        REMI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#routellm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RouteLLM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MARC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AFL
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interactive-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Interactive Recommendations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 Interactive Recommendations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iagent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        iAgent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interecagent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        InteRecAgent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macrs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MACRS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rec4agentverse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rec4Agentverse
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#taira" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TAIRA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matcha" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MATCHA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cshi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSHI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ialp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        iALP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CORE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chatcrs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ChatCRS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agentcf_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AgentCF
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PMS
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎮 System Evaluation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎮 System Evaluation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ievalm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        iEvaLM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#billp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BiLLP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recagent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RecAgent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drunkagent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DrunkAgent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simpleusersim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SimpleUserSim
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creagent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CreAgent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yoon-et-al" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Yoon et al.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usimagent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        USimAgent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chirag-shah-et-al" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chirag Shah et al.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#textsimu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TextSimu
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recusersim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RecUserSim
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pepper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PEPPER
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agent4rec" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agent4Rec
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suber" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SUBER
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cheatagent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CheatAgent
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#single-agent-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🤖 Single-Agent Systems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🤖 Single-Agent Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#autoconcierge_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AutoConcierge
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recai_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RecAI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shuang-et-al_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shuang et al.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interecagent_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        InteRecAgent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recmind_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RecMind
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#madrec_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MADREC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#puma_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PUMA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#starec_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        STARec
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remi_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        REMI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agentdr_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AgentDR
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ievalm_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        iEvaLM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CORE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usimagent_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        USimAgent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zhang-et-al_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zhang et al.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cheatagent_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CheatAgent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pepper_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PEPPER
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toolrec_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ToolRec
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yoon-et-al_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Yoon et al.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simpleusersim_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SimpleUserSim
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suber_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SUBER
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cshi_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSHI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lusifer_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lusifer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ialp_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        iALP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iagent_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        iAgent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recagent_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RecAgent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recusersim_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RecUserSim
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creagent_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CreAgent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drunkagent_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DrunkAgent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ruleagent_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RuleAgent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csa_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jie-wang-et-al_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jie Wang et al.
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multi-agent-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        👥 Multi-Agent Systems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="👥 Multi-Agent Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rec4agentverse_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rec4Agentverse
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pms_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PMS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macrs_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MACRS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macrec_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MACRec
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mas4poi_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MAS4POI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#taira_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TAIRA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chatcrs_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ChatCRS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mmagentrec_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MMAgentRec
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cda4rec_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CDA4Rec
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#routellm_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RouteLLM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marc_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MARC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matcha_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MATCHA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agent4rec_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agent4Rec
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rah_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RAH
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pearl_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PEARL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#textsimu_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TextSimu
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#carts_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CARTS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#discomfortfilter_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DiscomfortFilter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chirag-shah-et-al_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chirag Shah et al.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agentcf_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AgentCF
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#billp_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BiLLP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afl_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AFL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kgla_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        KGLA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vragent-r1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VRAgent-R1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arag_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ARAG
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agentcf_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AgentCF++
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rpp_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RPP
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="paper-list">Paper List<a class="headerlink" href="#paper-list" title="Permanent link">&para;</a></h1>
+<p>This page contains all papers from our survey, organized by category.</p>
+<h2 id="general-recommendations">📈 General Recommendations<a class="headerlink" href="#general-recommendations" title="Permanent link">&para;</a></h2>
+<p><em>14 papers</em></p>
+<h3 id="recmind">RecMind<a class="headerlink" href="#recmind" title="Permanent link">&para;</a></h3>
+<p><strong>RecMind: Large Language Model Powered Agent For Recommendation</strong></p>
+<p><em>NAACL 2024 (2024)</em></p>
+<p><a href="https://aclanthology.org/2024.findings-naacl.271/"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="macrec">MACRec<a class="headerlink" href="#macrec" title="Permanent link">&para;</a></h3>
+<p><strong>MACRec: a Multi-Agent Collaboration Framework for Recommendation</strong></p>
+<p><em>Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval (2024)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3626772.3657669"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="recai">RecAI<a class="headerlink" href="#recai" title="Permanent link">&para;</a></h3>
+<p><strong>RecAI: Leveraging Large Language Models for Next-Generation Recommender Systems</strong></p>
+<p><em>Companion Proceedings of the ACM Web Conference 2024 (2024)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3589335.3651242"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="agentcf">AgentCF++<a class="headerlink" href="#agentcf" title="Permanent link">&para;</a></h3>
+<p><strong>AgentCF++: Memory-enhanced LLM-based Agents for  Popularity-aware Cross-domain Recommendations</strong></p>
+<p><em>Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval (2025)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3726302.3730161"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="rah">RAH<a class="headerlink" href="#rah" title="Permanent link">&para;</a></h3>
+<p><strong>RAH! RecSys-Assistant-Human: A Human-Centered Recommendation Framework with LLM Agents</strong></p>
+<p><em>IEEE Transactions on Computational Social Systems (2024)</em></p>
+<p><a href="https://ieeexplore.ieee.org/abstract/document/10572486"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="zhang-et-al">Zhang et al.<a class="headerlink" href="#zhang-et-al" title="Permanent link">&para;</a></h3>
+<p><strong>LLM-Powered User Simulator for Recommender System</strong></p>
+<p><em>Proceedings of the AAAI Conference on Artificial Intelligence (2025)</em></p>
+<p><a href="https://ojs.aaai.org/index.php/AAAI/article/view/33456"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="jie-wang-et-al">Jie Wang et al.<a class="headerlink" href="#jie-wang-et-al" title="Permanent link">&para;</a></h3>
+<p><strong>Reinforcement Learning-based Recommender Systems with  Large Language Models for State Reward and Action Modeling</strong></p>
+<p><em>Proceedings of the 47th International ACM SIGIR conference on research and development in information retrieval (2024)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3626772.3657767"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="csa">CSA<a class="headerlink" href="#csa" title="Permanent link">&para;</a></h3>
+<p><strong>Contrastive State Augmentations for Reinforcement  Learning-Based Recommender Systems</strong></p>
+<p><em>Proceedings of the 46th international ACM SIGIR conference on research and development in information retrieval (2023)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3539618.3591656"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="kgla">KGLA<a class="headerlink" href="#kgla" title="Permanent link">&para;</a></h3>
+<p><strong>KGLA: Knowledge Graph Enhanced Language Agents for Recommendation</strong></p>
+<p><em>arXiv preprint arXiv:2410.19627 (2024)</em></p>
+<p><a href="https://arxiv.org/pdf/2410.19627"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="starec">STARec<a class="headerlink" href="#starec" title="Permanent link">&para;</a></h3>
+<p><strong>STARec: An Efficient Agent Framework for Recommender Systems via Autonomous Deliberate Reasoning</strong></p>
+<p><em>Proceedings of the 34th ACM International Conference on Information and Knowledge Management (2025)</em></p>
+<p><a href="https://dl.acm.org/doi/10.1145/3746252.3760995"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="madrec">MADREC<a class="headerlink" href="#madrec" title="Permanent link">&para;</a></h3>
+<p><strong>MADREC: A Multi-Aspect Driven LLM Agent for Explainable and Adaptive Recommendation</strong></p>
+<p><em>arXiv preprint arXiv:2510.13371 (2025)</em></p>
+<p><a href="https://arxiv.org/pdf/2510.13371"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="agentdr">AgentDR<a class="headerlink" href="#agentdr" title="Permanent link">&para;</a></h3>
+<p><strong>AgentDR: Dynamic Recommendation with Implicit Item-Item Relations via LLM-based Agents</strong></p>
+<p><em>arXiv preprint arXiv:2510.05598 (2025)</em></p>
+<p><a href="https://arxiv.org/pdf/2510.05598"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="rpp">RPP<a class="headerlink" href="#rpp" title="Permanent link">&para;</a></h3>
+<p><strong>Reinforced prompt personalization for recommendation with large language models</strong></p>
+<p><em>ACM Transactions on Information Systems (2025)</em></p>
+<p><a href="https://dl.acm.org/doi/full/10.1145/3716320"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="arag">ARAG<a class="headerlink" href="#arag" title="Permanent link">&para;</a></h3>
+<p><strong>ARAG: Agentic Retrieval Augmented Generation for  Personalized Recommendation</strong></p>
+<p><em>arXiv preprint arXiv:2506.21931 (2025)</em></p>
+<p><a href="https://arxiv.org/pdf/2506.21931"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h2 id="domain-specific-recommendations">🔍 Domain-Specific Recommendations<a class="headerlink" href="#domain-specific-recommendations" title="Permanent link">&para;</a></h2>
+<p><em>17 papers</em></p>
+<h3 id="toolrec">ToolRec<a class="headerlink" href="#toolrec" title="Permanent link">&para;</a></h3>
+<p><strong>Let Me Do It For You: Towards LLM Empowered Recommendation via Tool Learning</strong></p>
+<p><em>Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval (2024)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3626772.3657828"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="shuang-et-al">Shuang et al.<a class="headerlink" href="#shuang-et-al" title="Permanent link">&para;</a></h3>
+<p><strong>An Extremely Data-efficient and Generative LLM-based Reinforcement Learning Agent for Recommenders</strong></p>
+<p><em>arXiv preprint arXiv:2408.16032 (2024)</em></p>
+<p><a href="https://arxiv.org/pdf/2408.16032"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="autoconcierge">AutoConcierge<a class="headerlink" href="#autoconcierge" title="Permanent link">&para;</a></h3>
+<p><strong>Automated Interactive Domain-Specific Conversational Agents that Understand Human Dialogs</strong></p>
+<p><em>International Symposium on Practical Aspects of Declarative Languages (2024)</em></p>
+<p><a href="https://link.springer.com/chapter/10.1007/978-3-031-52038-9_13"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="mmagentrec">MMAgentRec<a class="headerlink" href="#mmagentrec" title="Permanent link">&para;</a></h3>
+<p><strong>MMAgentRec, a personalized multi-modal recommendation agent with large language model</strong></p>
+<p><em>Scientific Reports (2025)</em></p>
+<p><a href="https://www.nature.com/articles/s41598-025-96458-w"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="mas4poi">MAS4POI<a class="headerlink" href="#mas4poi" title="Permanent link">&para;</a></h3>
+<p><strong>MAS4POI: a Multi-Agents Collaboration System  for Next POI Recommendation</strong></p>
+<p><em>Pacific-Asia Conference on Knowledge Discovery and Data Mining (2025)</em></p>
+<p><a href="https://link.springer.com/chapter/10.1007/978-981-96-8180-8_28"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="discomfortfilter">DiscomfortFilter<a class="headerlink" href="#discomfortfilter" title="Permanent link">&para;</a></h3>
+<p><strong>Filtering discomforting recommendations with large language models</strong></p>
+<p><em>Proceedings of the ACM on Web Conference 2025 (2025)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3696410.3714850"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="lusifer">Lusifer<a class="headerlink" href="#lusifer" title="Permanent link">&para;</a></h3>
+<p><strong>Lusifer: LLM-based User Simulated Feedback  Environment For online Recommender systems</strong></p>
+<p><em>2025 IEEE 4th International Conference on Computing and Machine Intelligence (ICMI) (2025)</em></p>
+<p><a href="https://ieeexplore.ieee.org/abstract/document/11141085/"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="ruleagent">RuleAgent<a class="headerlink" href="#ruleagent" title="Permanent link">&para;</a></h3>
+<p><strong>RuleAgent: Discovering Rules for Recommendation Denoising  with Autonomous Language Agents</strong></p>
+<p><em>arXiv preprint arXiv:2503.23374 (2025)</em></p>
+<p><a href="https://arxiv.org/pdf/2503.23374"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="pearl">PEARL<a class="headerlink" href="#pearl" title="Permanent link">&para;</a></h3>
+<p><strong>PEARL: Preference Extraction with Exemplar Augmentation and Retrieval with LLM Agents</strong></p>
+<p><em>Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (2024)</em></p>
+<p><a href="https://aclanthology.org/2024.emnlp-industry.112.pdf"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="carts">CARTS<a class="headerlink" href="#carts" title="Permanent link">&para;</a></h3>
+<p><strong>CARTS: Collaborative agents for recommendation textual summarization</strong></p>
+<p><em>arXiv preprint arXiv:2506.17765 (2025)</em></p>
+<p><a href="http://arxiv.org/pdf/2506.17765"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="vragent-r1">VRAgent-R1<a class="headerlink" href="#vragent-r1" title="Permanent link">&para;</a></h3>
+<p><strong>VRAgent-R1: Boosting Video Recommendation with MLLM-based Agents via Reinforcement Learning</strong></p>
+<p><em>arXiv preprint arXiv:2507.02626 (2025)</em></p>
+<p><a href="https://arxiv.org/pdf/2507.02626"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="puma">PUMA<a class="headerlink" href="#puma" title="Permanent link">&para;</a></h3>
+<p><strong>Large Language Models Empowered Personalized Web Agents</strong></p>
+<p><em>Proceedings of the ACM on Web Conference 2025 (2025)</em></p>
+<p><a href="https://dl.acm.org/doi/10.1145/3696410.3714842"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="cda4rec">CDA4Rec<a class="headerlink" href="#cda4rec" title="Permanent link">&para;</a></h3>
+<p><strong>Cloud-Device Collaborative Agents for Sequential Recommendation</strong></p>
+<p><em>arXiv preprint arXiv:2509.01551 (2025)</em></p>
+<p><a href="https://arxiv.org/pdf/2509.01551"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="remi">REMI<a class="headerlink" href="#remi" title="Permanent link">&para;</a></h3>
+<p><strong>REMI: A Novel Causal Schema Memory Architecture for Personalized Lifestyle Recommendation Agents</strong></p>
+<p><em>arXiv preprint arXiv:2509.06269 (2025)</em></p>
+<p><a href="https://oars-workshop.github.io/papers/Raman2025.pdf"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="routellm">RouteLLM<a class="headerlink" href="#routellm" title="Permanent link">&para;</a></h3>
+<p><strong>Constraint-Aware Route Recommendation from Natural Language via Hierarchical LLM Agents</strong></p>
+<p><em>arXiv preprint arXiv:2510.06078 (2025)</em></p>
+<p><a href="https://arxiv.org/pdf/2510.06078"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="marc">MARC<a class="headerlink" href="#marc" title="Permanent link">&para;</a></h3>
+<p><strong>MARC: Multimodal and Multi-Task Agentic Retrieval-Augmented Generation for Cold-Start Recommender System</strong></p>
+<p><em>arXiv preprint arXiv:2511.08181 (2025)</em></p>
+<p><a href="https://arxiv.org/abs/2511.08181"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="afl">AFL<a class="headerlink" href="#afl" title="Permanent link">&para;</a></h3>
+<p><strong>Agentic Feedback Loop Modeling Improves Recommendation  and User Simulation</strong></p>
+<p><em>Proceedings of the 48th international ACM SIGIR conference on research and development in Information Retrieval (2025)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3726302.3729893"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h2 id="interactive-recommendations">📚 Interactive Recommendations<a class="headerlink" href="#interactive-recommendations" title="Permanent link">&para;</a></h2>
+<p><em>12 papers</em></p>
+<h3 id="iagent">iAgent<a class="headerlink" href="#iagent" title="Permanent link">&para;</a></h3>
+<p>** iAgent: LLM Agent as a Shield between User and Recommender Systems**</p>
+<p><em>arXiv preprint arXiv:2502.14662 (2025)</em></p>
+<p><a href="https://arxiv.org/pdf/2502.14662"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="interecagent">InteRecAgent<a class="headerlink" href="#interecagent" title="Permanent link">&para;</a></h3>
+<p><strong>Recommender AI Agent: Integrating Large Language Models for Interactive Recommendations</strong></p>
+<p><em>ACM Transactions on Information Systems (2025)</em></p>
+<p><a href="https://dl.acm.org/doi/full/10.1145/3731446"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="macrs">MACRS<a class="headerlink" href="#macrs" title="Permanent link">&para;</a></h3>
+<p><strong>A Multi-Agent Conversational Recommender System</strong></p>
+<p><em>arXiv preprint arXiv:2402.01135 (2024)</em></p>
+<p><a href="https://arxiv.org/pdf/2402.01135"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="rec4agentverse">Rec4Agentverse<a class="headerlink" href="#rec4agentverse" title="Permanent link">&para;</a></h3>
+<p><strong>Prospect Personalized Recommendation on Large Language Model-based Agent Platform</strong></p>
+<p><em>arXiv preprint arXiv:2402.18240 (2024)</em></p>
+<p><a href="https://arxiv.org/pdf/2402.18240"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="taira">TAIRA<a class="headerlink" href="#taira" title="Permanent link">&para;</a></h3>
+<p><strong>Thought-Augmented Planning for LLM-Powered Interactive Recommender Agent</strong></p>
+<p><em>arXiv preprint arXiv:2506.23485 (2025)</em></p>
+<p><a href="https://arxiv.org/abs/2506.23485"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="matcha">MATCHA<a class="headerlink" href="#matcha" title="Permanent link">&para;</a></h3>
+<p><strong>MATCHA: Can Multi-Agent Collaboration Build a Trustworthy  Conversational Recommender?</strong></p>
+<p><em>arXiv preprint arXiv:2504.20094 (2025)</em></p>
+<p><a href="https://arxiv.org/pdf/2504.20094"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="cshi">CSHI<a class="headerlink" href="#cshi" title="Permanent link">&para;</a></h3>
+<p><strong>A LLM-based Controllable, Scalable, Human-Involved User Simulator Framework for Conversational Recommender Systems</strong></p>
+<p><em>Proceedings of the ACM on Web Conference 2025 (2025)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3696410.3714858"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="ialp">iALP<a class="headerlink" href="#ialp" title="Permanent link">&para;</a></h3>
+<p><strong>Large Language Model driven Policy Exploration for  Recommender Systems</strong></p>
+<p><em>Proceedings of the Eighteenth ACM International Conference on Web Search and Data Mining (2025)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3701551.3703496"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="core">CORE<a class="headerlink" href="#core" title="Permanent link">&para;</a></h3>
+<p><strong>Lending Interaction Wings to Recommender Systems with Conversational Agents</strong></p>
+<p><em>Advances in Neural Information Processing Systems (2023)</em></p>
+<p><a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/58cd3b02902d79aea4b3b603fb0d0941-Abstract-Conference.html"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="chatcrs">ChatCRS<a class="headerlink" href="#chatcrs" title="Permanent link">&para;</a></h3>
+<p><strong>Incorporating External Knowledge and Goal Guidance for LLM-based Conversational Recommender Systems</strong></p>
+<p><em>NAACL 2025 (2025)</em></p>
+<p><a href="https://aclanthology.org/2025.findings-naacl.17/"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="agentcf_1">AgentCF<a class="headerlink" href="#agentcf_1" title="Permanent link">&para;</a></h3>
+<p>** AgentCF: Collaborative Learning with Autonomous Language  Agents for Recommender Systems**</p>
+<p><em>Proceedings of the ACM Web Conference 2024 (2024)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3589334.3645537"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="pms">PMS<a class="headerlink" href="#pms" title="Permanent link">&para;</a></h3>
+<p><strong>Personalized Recommendation Systems using Multimodal, Autonomous, Multi Agent Systems</strong></p>
+<p><em>arXiv preprint arXiv:2410.19855 (2024)</em></p>
+<p><a href="https://arxiv.org/pdf/2410.19855"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h2 id="system-evaluation">🎮 System Evaluation<a class="headerlink" href="#system-evaluation" title="Permanent link">&para;</a></h2>
+<p><em>15 papers</em></p>
+<h3 id="ievalm">iEvaLM<a class="headerlink" href="#ievalm" title="Permanent link">&para;</a></h3>
+<p><strong>Rethinking the Evaluation for Conversational Recommendation  in the Era of Large Language Models</strong></p>
+<p><em>arXiv preprint arXiv:2305.13112 (2023)</em></p>
+<p><a href="https://arxiv.org/pdf/2305.13112"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="billp">BiLLP<a class="headerlink" href="#billp" title="Permanent link">&para;</a></h3>
+<p><strong>Large Language Models are Learnable Planners for Long-Term  Recommendation</strong></p>
+<p><em>Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval (2024)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3626772.3657683"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="recagent">RecAgent<a class="headerlink" href="#recagent" title="Permanent link">&para;</a></h3>
+<p><strong>User Behavior Simulation with Large Language Model based Agents</strong></p>
+<p><em>ACM Transactions on Information Systems (2025)</em></p>
+<p><a href="https://dl.acm.org/doi/full/10.1145/3708985"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="drunkagent">DrunkAgent<a class="headerlink" href="#drunkagent" title="Permanent link">&para;</a></h3>
+<p><strong>Get the Agents Drunk: Memory Perturbations in Autonomous  Agent-based Recommender Systems</strong></p>
+<p><em>arXiv e-prints (2025)</em></p>
+<p><a href="https://arxiv.org/pdf/2503.23804"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="simpleusersim">SimpleUserSim<a class="headerlink" href="#simpleusersim" title="Permanent link">&para;</a></h3>
+<p><strong>How Reliable is Your Simulator? Analysis on the Limitations of  Current LLM-based User Simulators for Conversational  Recommendation</strong></p>
+<p><em>Companion Proceedings of the ACM Web Conference 2024 (2024)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3589335.3651955"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="creagent">CreAgent<a class="headerlink" href="#creagent" title="Permanent link">&para;</a></h3>
+<p><strong>CreAgent: Towards Long-Term Evaluation of Recommender System under Platform-Creator Information Asymmetry</strong></p>
+<p><em>arXiv preprint arXiv:2502.07307 (2025)</em></p>
+<p><a href="https://arxiv.org/pdf/2502.07307"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="yoon-et-al">Yoon et al.<a class="headerlink" href="#yoon-et-al" title="Permanent link">&para;</a></h3>
+<p><strong>Evaluating Large Language Models as Generative User Simulators for  Conversational Recommendation</strong></p>
+<p><em>Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics (2024)</em></p>
+<p><a href="https://aclanthology.org/2024.naacl-long.83/"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="usimagent">USimAgent<a class="headerlink" href="#usimagent" title="Permanent link">&para;</a></h3>
+<p><strong>USimAgent: Large Language Models for Simulating Search Users</strong></p>
+<p><em>Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval (2024)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3626772.3657963"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="chirag-shah-et-al">Chirag Shah et al.<a class="headerlink" href="#chirag-shah-et-al" title="Permanent link">&para;</a></h3>
+<p><strong>Dynamic Evaluation Framework for Personalized and Trustworthy Agents: A Multi-Session Approach to Preference Adaptability</strong></p>
+<p><em>arXiv preprint arXiv:2504.06277 (2025)</em></p>
+<p><a href="https://www.arxiv.org/pdf/2504.06277"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="textsimu">TextSimu<a class="headerlink" href="#textsimu" title="Permanent link">&para;</a></h3>
+<p><strong>ID-Free Not Risk-Free: LLM-Powered Agents Unveil Risks in  ID-Free Recommender Systems</strong></p>
+<p><em>Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval (2025)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3726302.3730003"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="recusersim">RecUserSim<a class="headerlink" href="#recusersim" title="Permanent link">&para;</a></h3>
+<p><strong>RecUserSim: A Realistic and Diverse User Simulator for  Evaluating Conversational Recommender Systems</strong></p>
+<p><em>Companion Proceedings of the ACM on Web Conference 2025 (2025)</em></p>
+<p><a href="https://dl.acm.org/doi/pdf/10.1145/3701716.3715258"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="pepper">PEPPER<a class="headerlink" href="#pepper" title="Permanent link">&para;</a></h3>
+<p><strong>Stop Playing the Guessing Game ! Target-free User Simulation for Evaluating Conversational Recommender Systems</strong></p>
+<p><em>arXiv preprint arXiv:2411.16160 (2024)</em></p>
+<p><a href="https://www.arxiv.org/pdf/2411.16160"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="agent4rec">Agent4Rec<a class="headerlink" href="#agent4rec" title="Permanent link">&para;</a></h3>
+<p><strong>On Generative Agents in Recommendation</strong></p>
+<p><em>Proceedings of the 47th international ACM SIGIR conference on research and development in Information Retrieval (2024)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3626772.3657844"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="suber">SUBER<a class="headerlink" href="#suber" title="Permanent link">&para;</a></h3>
+<p><strong>SUBER: An RL Environment with Simulated  Human Behavior for Recommender Systems</strong></p>
+<p><em>arXiv preprint arXiv:2406.01631 (2024)</em></p>
+<p><a href="https://arxiv.org/pdf/2406.01631"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="cheatagent">CheatAgent<a class="headerlink" href="#cheatagent" title="Permanent link">&para;</a></h3>
+<p><strong>CheatAgent: Attacking LLM-Empowered Recommender Systems via LLM Agent</strong></p>
+<p><em>Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (2024)</em></p>
+<p><a href="https://dl.acm.org/doi/10.1145/3637528.3671837"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h2 id="single-agent-systems">🤖 Single-Agent Systems<a class="headerlink" href="#single-agent-systems" title="Permanent link">&para;</a></h2>
+<p><em>31 papers</em></p>
+<h3 id="autoconcierge_1">AutoConcierge<a class="headerlink" href="#autoconcierge_1" title="Permanent link">&para;</a></h3>
+<p><strong>Automated Interactive Domain-Specific Conversational Agents that Understand Human Dialogs</strong></p>
+<p><em>International Symposium on Practical Aspects of Declarative Languages (2024)</em></p>
+<p><a href="https://link.springer.com/chapter/10.1007/978-3-031-52038-9_13"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="recai_1">RecAI<a class="headerlink" href="#recai_1" title="Permanent link">&para;</a></h3>
+<p><strong>RecAI: Leveraging Large Language Models for Next-Generation Recommender Systems</strong></p>
+<p><em>Companion Proceedings of the ACM Web Conference 2024 (2024)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3589335.3651242"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="shuang-et-al_1">Shuang et al.<a class="headerlink" href="#shuang-et-al_1" title="Permanent link">&para;</a></h3>
+<p><strong>An Extremely Data-efficient and Generative LLM-based Reinforcement Learning Agent for Recommenders</strong></p>
+<p><em>arXiv preprint arXiv:2408.16032 (2024)</em></p>
+<p><a href="https://arxiv.org/pdf/2408.16032"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="interecagent_1">InteRecAgent<a class="headerlink" href="#interecagent_1" title="Permanent link">&para;</a></h3>
+<p><strong>Recommender AI Agent: Integrating Large Language Models for Interactive Recommendations</strong></p>
+<p><em>ACM Transactions on Information Systems (2025)</em></p>
+<p><a href="https://dl.acm.org/doi/full/10.1145/3731446"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="recmind_1">RecMind<a class="headerlink" href="#recmind_1" title="Permanent link">&para;</a></h3>
+<p><strong>RecMind: Large Language Model Powered Agent For Recommendation</strong></p>
+<p><em>NAACL 2024 (2024)</em></p>
+<p><a href="https://aclanthology.org/2024.findings-naacl.271/"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="madrec_1">MADREC<a class="headerlink" href="#madrec_1" title="Permanent link">&para;</a></h3>
+<p><strong>MADREC: A Multi-Aspect Driven LLM Agent for Explainable and Adaptive Recommendation</strong></p>
+<p><em>arXiv preprint arXiv:2510.13371 (2025)</em></p>
+<p><a href="https://arxiv.org/pdf/2510.13371"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="puma_1">PUMA<a class="headerlink" href="#puma_1" title="Permanent link">&para;</a></h3>
+<p><strong>Large Language Models Empowered Personalized Web Agents</strong></p>
+<p><em>Proceedings of the ACM on Web Conference 2025 (2025)</em></p>
+<p><a href="https://dl.acm.org/doi/10.1145/3696410.3714842"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="starec_1">STARec<a class="headerlink" href="#starec_1" title="Permanent link">&para;</a></h3>
+<p><strong>STARec: An Efficient Agent Framework for Recommender Systems via Autonomous Deliberate Reasoning</strong></p>
+<p><em>Proceedings of the 34th ACM International Conference on Information and Knowledge Management (2025)</em></p>
+<p><a href="https://dl.acm.org/doi/10.1145/3746252.3760995"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="remi_1">REMI<a class="headerlink" href="#remi_1" title="Permanent link">&para;</a></h3>
+<p><strong>REMI: A Novel Causal Schema Memory Architecture for Personalized Lifestyle Recommendation Agents</strong></p>
+<p><em>arXiv preprint arXiv:2509.06269 (2025)</em></p>
+<p><a href="https://oars-workshop.github.io/papers/Raman2025.pdf"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="agentdr_1">AgentDR<a class="headerlink" href="#agentdr_1" title="Permanent link">&para;</a></h3>
+<p><strong>AgentDR: Dynamic Recommendation with Implicit Item-Item Relations via LLM-based Agents</strong></p>
+<p><em>arXiv preprint arXiv:2510.05598 (2025)</em></p>
+<p><a href="https://arxiv.org/pdf/2510.05598"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="ievalm_1">iEvaLM<a class="headerlink" href="#ievalm_1" title="Permanent link">&para;</a></h3>
+<p><strong>Rethinking the Evaluation for Conversational Recommendation  in the Era of Large Language Models</strong></p>
+<p><em>arXiv preprint arXiv:2305.13112 (2023)</em></p>
+<p><a href="https://arxiv.org/pdf/2305.13112"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="core_1">CORE<a class="headerlink" href="#core_1" title="Permanent link">&para;</a></h3>
+<p><strong>Lending Interaction Wings to Recommender Systems with Conversational Agents</strong></p>
+<p><em>Advances in Neural Information Processing Systems (2023)</em></p>
+<p><a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/58cd3b02902d79aea4b3b603fb0d0941-Abstract-Conference.html"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="usimagent_1">USimAgent<a class="headerlink" href="#usimagent_1" title="Permanent link">&para;</a></h3>
+<p><strong>USimAgent: Large Language Models for Simulating Search Users</strong></p>
+<p><em>Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval (2024)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3626772.3657963"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="zhang-et-al_1">Zhang et al.<a class="headerlink" href="#zhang-et-al_1" title="Permanent link">&para;</a></h3>
+<p><strong>LLM-Powered User Simulator for Recommender System</strong></p>
+<p><em>Proceedings of the AAAI Conference on Artificial Intelligence (2025)</em></p>
+<p><a href="https://ojs.aaai.org/index.php/AAAI/article/view/33456"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="cheatagent_1">CheatAgent<a class="headerlink" href="#cheatagent_1" title="Permanent link">&para;</a></h3>
+<p><strong>CheatAgent: Attacking LLM-Empowered Recommender Systems via LLM Agent</strong></p>
+<p><em>Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (2024)</em></p>
+<p><a href="https://dl.acm.org/doi/10.1145/3637528.3671837"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="pepper_1">PEPPER<a class="headerlink" href="#pepper_1" title="Permanent link">&para;</a></h3>
+<p><strong>Stop Playing the Guessing Game ! Target-free User Simulation for Evaluating Conversational Recommender Systems</strong></p>
+<p><em>arXiv preprint arXiv:2411.16160 (2024)</em></p>
+<p><a href="https://www.arxiv.org/pdf/2411.16160"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="toolrec_1">ToolRec<a class="headerlink" href="#toolrec_1" title="Permanent link">&para;</a></h3>
+<p><strong>Let Me Do It For You: Towards LLM Empowered Recommendation via Tool Learning</strong></p>
+<p><em>Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval (2024)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3626772.3657828"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="yoon-et-al_1">Yoon et al.<a class="headerlink" href="#yoon-et-al_1" title="Permanent link">&para;</a></h3>
+<p><strong>Evaluating Large Language Models as Generative User Simulators for  Conversational Recommendation</strong></p>
+<p><em>Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics (2024)</em></p>
+<p><a href="https://aclanthology.org/2024.naacl-long.83/"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="simpleusersim_1">SimpleUserSim<a class="headerlink" href="#simpleusersim_1" title="Permanent link">&para;</a></h3>
+<p><strong>How Reliable is Your Simulator? Analysis on the Limitations of  Current LLM-based User Simulators for Conversational  Recommendation</strong></p>
+<p><em>Companion Proceedings of the ACM Web Conference 2024 (2024)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3589335.3651955"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="suber_1">SUBER<a class="headerlink" href="#suber_1" title="Permanent link">&para;</a></h3>
+<p><strong>SUBER: An RL Environment with Simulated  Human Behavior for Recommender Systems</strong></p>
+<p><em>arXiv preprint arXiv:2406.01631 (2024)</em></p>
+<p><a href="https://arxiv.org/pdf/2406.01631"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="cshi_1">CSHI<a class="headerlink" href="#cshi_1" title="Permanent link">&para;</a></h3>
+<p><strong>A LLM-based Controllable, Scalable, Human-Involved User Simulator Framework for Conversational Recommender Systems</strong></p>
+<p><em>Proceedings of the ACM on Web Conference 2025 (2025)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3696410.3714858"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="lusifer_1">Lusifer<a class="headerlink" href="#lusifer_1" title="Permanent link">&para;</a></h3>
+<p><strong>Lusifer: LLM-based User Simulated Feedback  Environment For online Recommender systems</strong></p>
+<p><em>2025 IEEE 4th International Conference on Computing and Machine Intelligence (ICMI) (2025)</em></p>
+<p><a href="https://ieeexplore.ieee.org/abstract/document/11141085/"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="ialp_1">iALP<a class="headerlink" href="#ialp_1" title="Permanent link">&para;</a></h3>
+<p><strong>Large Language Model driven Policy Exploration for  Recommender Systems</strong></p>
+<p><em>Proceedings of the Eighteenth ACM International Conference on Web Search and Data Mining (2025)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3701551.3703496"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="iagent_1">iAgent<a class="headerlink" href="#iagent_1" title="Permanent link">&para;</a></h3>
+<p>** iAgent: LLM Agent as a Shield between User and Recommender Systems**</p>
+<p><em>arXiv preprint arXiv:2502.14662 (2025)</em></p>
+<p><a href="https://arxiv.org/pdf/2502.14662"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="recagent_1">RecAgent<a class="headerlink" href="#recagent_1" title="Permanent link">&para;</a></h3>
+<p><strong>User Behavior Simulation with Large Language Model based Agents</strong></p>
+<p><em>ACM Transactions on Information Systems (2025)</em></p>
+<p><a href="https://dl.acm.org/doi/full/10.1145/3708985"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="recusersim_1">RecUserSim<a class="headerlink" href="#recusersim_1" title="Permanent link">&para;</a></h3>
+<p><strong>RecUserSim: A Realistic and Diverse User Simulator for  Evaluating Conversational Recommender Systems</strong></p>
+<p><em>Companion Proceedings of the ACM on Web Conference 2025 (2025)</em></p>
+<p><a href="https://dl.acm.org/doi/pdf/10.1145/3701716.3715258"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="creagent_1">CreAgent<a class="headerlink" href="#creagent_1" title="Permanent link">&para;</a></h3>
+<p><strong>CreAgent: Towards Long-Term Evaluation of Recommender System under Platform-Creator Information Asymmetry</strong></p>
+<p><em>arXiv preprint arXiv:2502.07307 (2025)</em></p>
+<p><a href="https://arxiv.org/pdf/2502.07307"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="drunkagent_1">DrunkAgent<a class="headerlink" href="#drunkagent_1" title="Permanent link">&para;</a></h3>
+<p><strong>Get the Agents Drunk: Memory Perturbations in Autonomous  Agent-based Recommender Systems</strong></p>
+<p><em>arXiv e-prints (2025)</em></p>
+<p><a href="https://arxiv.org/pdf/2503.23804"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="ruleagent_1">RuleAgent<a class="headerlink" href="#ruleagent_1" title="Permanent link">&para;</a></h3>
+<p><strong>RuleAgent: Discovering Rules for Recommendation Denoising  with Autonomous Language Agents</strong></p>
+<p><em>arXiv preprint arXiv:2503.23374 (2025)</em></p>
+<p><a href="https://arxiv.org/pdf/2503.23374"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="csa_1">CSA<a class="headerlink" href="#csa_1" title="Permanent link">&para;</a></h3>
+<p><strong>Contrastive State Augmentations for Reinforcement  Learning-Based Recommender Systems</strong></p>
+<p><em>Proceedings of the 46th international ACM SIGIR conference on research and development in information retrieval (2023)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3539618.3591656"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="jie-wang-et-al_1">Jie Wang et al.<a class="headerlink" href="#jie-wang-et-al_1" title="Permanent link">&para;</a></h3>
+<p><strong>Reinforcement Learning-based Recommender Systems with  Large Language Models for State Reward and Action Modeling</strong></p>
+<p><em>Proceedings of the 47th International ACM SIGIR conference on research and development in information retrieval (2024)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3626772.3657767"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h2 id="multi-agent-systems">👥 Multi-Agent Systems<a class="headerlink" href="#multi-agent-systems" title="Permanent link">&para;</a></h2>
+<p><em>27 papers</em></p>
+<h3 id="rec4agentverse_1">Rec4Agentverse<a class="headerlink" href="#rec4agentverse_1" title="Permanent link">&para;</a></h3>
+<p><strong>Prospect Personalized Recommendation on Large Language Model-based Agent Platform</strong></p>
+<p><em>arXiv preprint arXiv:2402.18240 (2024)</em></p>
+<p><a href="https://arxiv.org/pdf/2402.18240"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="pms_1">PMS<a class="headerlink" href="#pms_1" title="Permanent link">&para;</a></h3>
+<p><strong>Personalized Recommendation Systems using Multimodal, Autonomous, Multi Agent Systems</strong></p>
+<p><em>arXiv preprint arXiv:2410.19855 (2024)</em></p>
+<p><a href="https://arxiv.org/pdf/2410.19855"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="macrs_1">MACRS<a class="headerlink" href="#macrs_1" title="Permanent link">&para;</a></h3>
+<p><strong>A Multi-Agent Conversational Recommender System</strong></p>
+<p><em>arXiv preprint arXiv:2402.01135 (2024)</em></p>
+<p><a href="https://arxiv.org/pdf/2402.01135"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="macrec_1">MACRec<a class="headerlink" href="#macrec_1" title="Permanent link">&para;</a></h3>
+<p><strong>MACRec: a Multi-Agent Collaboration Framework for Recommendation</strong></p>
+<p><em>Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval (2024)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3626772.3657669"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="mas4poi_1">MAS4POI<a class="headerlink" href="#mas4poi_1" title="Permanent link">&para;</a></h3>
+<p><strong>MAS4POI: a Multi-Agents Collaboration System  for Next POI Recommendation</strong></p>
+<p><em>Pacific-Asia Conference on Knowledge Discovery and Data Mining (2025)</em></p>
+<p><a href="https://link.springer.com/chapter/10.1007/978-981-96-8180-8_28"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="taira_1">TAIRA<a class="headerlink" href="#taira_1" title="Permanent link">&para;</a></h3>
+<p><strong>Thought-Augmented Planning for LLM-Powered Interactive Recommender Agent</strong></p>
+<p><em>arXiv preprint arXiv:2506.23485 (2025)</em></p>
+<p><a href="https://arxiv.org/abs/2506.23485"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="chatcrs_1">ChatCRS<a class="headerlink" href="#chatcrs_1" title="Permanent link">&para;</a></h3>
+<p><strong>Incorporating External Knowledge and Goal Guidance for LLM-based Conversational Recommender Systems</strong></p>
+<p><em>NAACL 2025 (2025)</em></p>
+<p><a href="https://aclanthology.org/2025.findings-naacl.17/"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="mmagentrec_1">MMAgentRec<a class="headerlink" href="#mmagentrec_1" title="Permanent link">&para;</a></h3>
+<p><strong>MMAgentRec, a personalized multi-modal recommendation agent with large language model</strong></p>
+<p><em>Scientific Reports (2025)</em></p>
+<p><a href="https://www.nature.com/articles/s41598-025-96458-w"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="cda4rec_1">CDA4Rec<a class="headerlink" href="#cda4rec_1" title="Permanent link">&para;</a></h3>
+<p><strong>Cloud-Device Collaborative Agents for Sequential Recommendation</strong></p>
+<p><em>arXiv preprint arXiv:2509.01551 (2025)</em></p>
+<p><a href="https://arxiv.org/pdf/2509.01551"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="routellm_1">RouteLLM<a class="headerlink" href="#routellm_1" title="Permanent link">&para;</a></h3>
+<p><strong>Constraint-Aware Route Recommendation from Natural Language via Hierarchical LLM Agents</strong></p>
+<p><em>arXiv preprint arXiv:2510.06078 (2025)</em></p>
+<p><a href="https://arxiv.org/pdf/2510.06078"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="marc_1">MARC<a class="headerlink" href="#marc_1" title="Permanent link">&para;</a></h3>
+<p><strong>MARC: Multimodal and Multi-Task Agentic Retrieval-Augmented Generation for Cold-Start Recommender System</strong></p>
+<p><em>arXiv preprint arXiv:2511.08181 (2025)</em></p>
+<p><a href="https://arxiv.org/abs/2511.08181"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="matcha_1">MATCHA<a class="headerlink" href="#matcha_1" title="Permanent link">&para;</a></h3>
+<p><strong>MATCHA: Can Multi-Agent Collaboration Build a Trustworthy  Conversational Recommender?</strong></p>
+<p><em>arXiv preprint arXiv:2504.20094 (2025)</em></p>
+<p><a href="https://arxiv.org/pdf/2504.20094"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="agent4rec_1">Agent4Rec<a class="headerlink" href="#agent4rec_1" title="Permanent link">&para;</a></h3>
+<p><strong>On Generative Agents in Recommendation</strong></p>
+<p><em>Proceedings of the 47th international ACM SIGIR conference on research and development in Information Retrieval (2024)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3626772.3657844"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="rah_1">RAH<a class="headerlink" href="#rah_1" title="Permanent link">&para;</a></h3>
+<p><strong>RAH! RecSys-Assistant-Human: A Human-Centered Recommendation Framework with LLM Agents</strong></p>
+<p><em>IEEE Transactions on Computational Social Systems (2024)</em></p>
+<p><a href="https://ieeexplore.ieee.org/abstract/document/10572486"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="pearl_1">PEARL<a class="headerlink" href="#pearl_1" title="Permanent link">&para;</a></h3>
+<p><strong>PEARL: Preference Extraction with Exemplar Augmentation and Retrieval with LLM Agents</strong></p>
+<p><em>Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (2024)</em></p>
+<p><a href="https://aclanthology.org/2024.emnlp-industry.112.pdf"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="textsimu_1">TextSimu<a class="headerlink" href="#textsimu_1" title="Permanent link">&para;</a></h3>
+<p><strong>ID-Free Not Risk-Free: LLM-Powered Agents Unveil Risks in  ID-Free Recommender Systems</strong></p>
+<p><em>Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval (2025)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3726302.3730003"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="carts_1">CARTS<a class="headerlink" href="#carts_1" title="Permanent link">&para;</a></h3>
+<p><strong>CARTS: Collaborative agents for recommendation textual summarization</strong></p>
+<p><em>arXiv preprint arXiv:2506.17765 (2025)</em></p>
+<p><a href="http://arxiv.org/pdf/2506.17765"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="discomfortfilter_1">DiscomfortFilter<a class="headerlink" href="#discomfortfilter_1" title="Permanent link">&para;</a></h3>
+<p><strong>Filtering discomforting recommendations with large language models</strong></p>
+<p><em>Proceedings of the ACM on Web Conference 2025 (2025)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3696410.3714850"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="chirag-shah-et-al_1">Chirag Shah et al.<a class="headerlink" href="#chirag-shah-et-al_1" title="Permanent link">&para;</a></h3>
+<p><strong>Dynamic Evaluation Framework for Personalized and Trustworthy Agents: A Multi-Session Approach to Preference Adaptability</strong></p>
+<p><em>arXiv preprint arXiv:2504.06277 (2025)</em></p>
+<p><a href="https://www.arxiv.org/pdf/2504.06277"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="agentcf_2">AgentCF<a class="headerlink" href="#agentcf_2" title="Permanent link">&para;</a></h3>
+<p>** AgentCF: Collaborative Learning with Autonomous Language  Agents for Recommender Systems**</p>
+<p><em>Proceedings of the ACM Web Conference 2024 (2024)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3589334.3645537"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="billp_1">BiLLP<a class="headerlink" href="#billp_1" title="Permanent link">&para;</a></h3>
+<p><strong>Large Language Models are Learnable Planners for Long-Term  Recommendation</strong></p>
+<p><em>Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval (2024)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3626772.3657683"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="afl_1">AFL<a class="headerlink" href="#afl_1" title="Permanent link">&para;</a></h3>
+<p><strong>Agentic Feedback Loop Modeling Improves Recommendation  and User Simulation</strong></p>
+<p><em>Proceedings of the 48th international ACM SIGIR conference on research and development in Information Retrieval (2025)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3726302.3729893"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="kgla_1">KGLA<a class="headerlink" href="#kgla_1" title="Permanent link">&para;</a></h3>
+<p><strong>KGLA: Knowledge Graph Enhanced Language Agents for Recommendation</strong></p>
+<p><em>arXiv preprint arXiv:2410.19627 (2024)</em></p>
+<p><a href="https://arxiv.org/pdf/2410.19627"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="vragent-r1_1">VRAgent-R1<a class="headerlink" href="#vragent-r1_1" title="Permanent link">&para;</a></h3>
+<p><strong>VRAgent-R1: Boosting Video Recommendation with MLLM-based Agents via Reinforcement Learning</strong></p>
+<p><em>arXiv preprint arXiv:2507.02626 (2025)</em></p>
+<p><a href="https://arxiv.org/pdf/2507.02626"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="arag_1">ARAG<a class="headerlink" href="#arag_1" title="Permanent link">&para;</a></h3>
+<p><strong>ARAG: Agentic Retrieval Augmented Generation for  Personalized Recommendation</strong></p>
+<p><em>arXiv preprint arXiv:2506.21931 (2025)</em></p>
+<p><a href="https://arxiv.org/pdf/2506.21931"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-paper-B31B1B?logo=arxiv&amp;logoColor=white" /></a></p>
+<h3 id="agentcf_3">AgentCF++<a class="headerlink" href="#agentcf_3" title="Permanent link">&para;</a></h3>
+<p><strong>AgentCF++: Memory-enhanced LLM-based Agents for  Popularity-aware Cross-domain Recommendations</strong></p>
+<p><em>Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval (2025)</em></p>
+<p><a href="https://dl.acm.org/doi/abs/10.1145/3726302.3730161"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<h3 id="rpp_1">RPP<a class="headerlink" href="#rpp_1" title="Permanent link">&para;</a></h3>
+<p><strong>Reinforced prompt personalization for recommendation with large language models</strong></p>
+<p><em>ACM Transactions on Information Systems (2025)</em></p>
+<p><a href="https://dl.acm.org/doi/full/10.1145/3716320"><img alt="DOI" src="https://img.shields.io/badge/DOI-paper-00599C?logo=doi&amp;logoColor=white" /></a></p>
+<hr />
+<p><strong>Total Papers</strong>: 116</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "content.code.copy", "search.suggest", "search.highlight", "toc.integrate", "navigation.indexes", "navigation.expand"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

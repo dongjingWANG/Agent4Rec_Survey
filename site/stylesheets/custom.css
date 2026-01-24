@@ -1,0 +1,85 @@
+/* Custom styles for Agent4Rec Survey */
+
+/* Fix left sidebar scrolling when TOC is integrated */
+.md-sidebar--primary {
+    overflow-y: auto !important;
+    max-height: calc(100vh - 3.6rem) !important;
+}
+
+.md-sidebar--primary .md-sidebar__scrollwrap {
+    overflow-y: auto !important;
+    max-height: calc(100vh - 3.6rem) !important;
+}
+
+/* Ensure left navigation is scrollable */
+.md-nav--primary {
+    overflow-y: auto !important;
+}
+
+/* Better scrollbar styling for left sidebar */
+.md-sidebar--primary::-webkit-scrollbar,
+.md-sidebar--primary .md-sidebar__scrollwrap::-webkit-scrollbar {
+    width: 8px;
+}
+
+.md-sidebar--primary::-webkit-scrollbar-track,
+.md-sidebar--primary .md-sidebar__scrollwrap::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.md-sidebar--primary::-webkit-scrollbar-thumb,
+.md-sidebar--primary .md-sidebar__scrollwrap::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.md-sidebar--primary::-webkit-scrollbar-thumb:hover,
+.md-sidebar--primary .md-sidebar__scrollwrap::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure proper spacing for integrated TOC */
+.md-nav__item {
+    padding: 0.2rem 0;
+}
+
+/* Make sure nested items are visible */
+.md-nav__item .md-nav__item {
+    margin-left: 0.8rem;
+}
+
+/* Ensure TOC items in left sidebar are visible */
+.md-nav--integrated .md-nav__item {
+    display: block !important;
+}
+
+/* Fix for long paper lists - ensure scrolling works */
+@media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+        height: calc(100vh - 3.6rem);
+        overflow-y: auto;
+    }
+    
+    .md-sidebar--primary .md-sidebar__scrollwrap {
+        height: 100%;
+        overflow-y: auto;
+    }
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Hide right sidebar since TOC is now on the left */
+.md-sidebar--secondary {
+    display: none !important;
+}
+
+/* Expand content area to use full width */
+@media screen and (min-width: 76.25em) {
+    .md-content {
+        margin-right: 0 !important;
+    }
+}
