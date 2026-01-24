@@ -31,14 +31,17 @@ if errorlevel 1 (
 )
 
 :: Install dependencies if needed
-if not exist "venv\Scripts\pip.exe" (
+echo Checking dependencies...
+python -c "import yaml" >nul 2>&1
+if errorlevel 1 (
     echo Installing dependencies...
     python -m pip install --upgrade pip
     if exist requirements.txt (
         pip install -r requirements.txt
     ) else (
-        pip install pyyaml
+        pip install pyyaml mkdocs mkdocs-material pymdown-extensions
     )
+    echo ✅ Dependencies installed
 )
 
 :menu
@@ -48,9 +51,9 @@ echo   Agent4Rec Survey - Quick Start
 echo ========================================
 echo.
 echo [1] Add Paper
-echo [2] Add/Update Table
+echo [2] Add Table
 echo [3] Batch Import
-echo [4] Sync ^& Render
+echo [4] Sync ^& Build
 echo [5] Preview (if mkdocs installed)
 echo [0] Exit
 echo.
@@ -69,10 +72,15 @@ if "%choice%"=="2" (
 )
 
 if "%choice%"=="3" (
-    if exist templates\papers_template.csv (
-        python scripts\batch_import.py templates\papers_template.csv
+    echo.
+    set /p csv_file="CSV file path (or press Enter for template): "
+    if "!csv_file!"=="" (
+        set csv_file=templates\papers_template.csv
+    )
+    if exist "!csv_file!" (
+        python scripts\batch_import.py "!csv_file!"
     ) else (
-        echo ❌ Template file not found: templates\papers_template.csv
+        echo ❌ File not found: !csv_file!
     )
     pause
     goto menu
@@ -80,11 +88,23 @@ if "%choice%"=="3" (
 
 if "%choice%"=="4" (
     echo.
-    echo ▶ Rendering papers...
+    echo [1/4] Rendering papers...
     python scripts\render_papers.py
-    echo.
-    echo ▶ Syncing README...
+    if errorlevel 1 goto error
+    echo [2/4] Generating citation...
+    python scripts\generate_citation.py
+    if errorlevel 1 goto error
+    echo [3/4] Syncing README...
     python scripts\sync_readme.py
+    if errorlevel 1 goto error
+    echo [4/4] Building website...
+    where mkdocs >nul 2>&1
+    if errorlevel 1 (
+        echo ⚠️ mkdocs not installed, skipping build
+        echo Install with: pip install mkdocs mkdocs-material
+    ) else (
+        mkdocs build
+    )
     echo.
     echo ✅ Done!
     pause
@@ -110,5 +130,11 @@ if "%choice%"=="0" (
 )
 
 echo ❌ Invalid choice
+pause
+goto menu
+
+:error
+echo.
+echo ❌ Failed
 pause
 goto menu

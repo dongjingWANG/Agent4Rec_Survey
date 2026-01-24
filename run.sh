@@ -31,14 +31,17 @@ if [ $? -ne 0 ]; then
 fi
 
 # Install dependencies if needed
-if [ ! -f "venv/bin/pip" ]; then
+echo "Checking dependencies..."
+python -c "import yaml" >/dev/null 2>&1
+if [ $? -ne 0 ]; then
     echo "Installing dependencies..."
     python -m pip install --upgrade pip
     if [ -f "requirements.txt" ]; then
         pip install -r requirements.txt
     else
-        pip install pyyaml
+        pip install pyyaml mkdocs mkdocs-material pymdown-extensions
     fi
+    echo -e "${GREEN}✅ Dependencies installed${NC}"
 fi
 
 # Main menu loop
@@ -49,9 +52,9 @@ while true; do
     echo "========================================"
     echo ""
     echo "[1] Add Paper"
-    echo "[2] Add/Update Table"
+    echo "[2] Add Table"
     echo "[3] Batch Import"
-    echo "[4] Sync & Render"
+    echo "[4] Sync & Build"
     echo "[5] Preview (if mkdocs installed)"
     echo "[0] Exit"
     echo ""
@@ -67,20 +70,33 @@ while true; do
             read -p "Press Enter to continue..."
             ;;
         3)
-            if [ -f "templates/papers_template.csv" ]; then
-                python scripts/batch_import.py templates/papers_template.csv
+            echo ""
+            read -p "CSV file path (or press Enter for template): " csv_file
+            if [ -z "$csv_file" ]; then
+                csv_file="templates/papers_template.csv"
+            fi
+            if [ -f "$csv_file" ]; then
+                python scripts/batch_import.py "$csv_file"
             else
-                echo -e "${RED}❌ Template file not found: templates/papers_template.csv${NC}"
+                echo -e "${RED}❌ File not found: $csv_file${NC}"
             fi
             read -p "Press Enter to continue..."
             ;;
         4)
             echo ""
-            echo "▶ Rendering papers..."
-            python scripts/render_papers.py
-            echo ""
-            echo "▶ Syncing README..."
-            python scripts/sync_readme.py
+            echo "[1/4] Rendering papers..."
+            python scripts/render_papers.py || { echo -e "${RED}❌ Failed${NC}"; read -p "Press Enter to continue..."; continue; }
+            echo "[2/4] Generating citation..."
+            python scripts/generate_citation.py || { echo -e "${RED}❌ Failed${NC}"; read -p "Press Enter to continue..."; continue; }
+            echo "[3/4] Syncing README..."
+            python scripts/sync_readme.py || { echo -e "${RED}❌ Failed${NC}"; read -p "Press Enter to continue..."; continue; }
+            echo "[4/4] Building website..."
+            if command -v mkdocs &> /dev/null; then
+                mkdocs build
+            else
+                echo -e "${YELLOW}⚠️ mkdocs not installed, skipping build${NC}"
+                echo "Install with: pip install mkdocs mkdocs-material"
+            fi
             echo ""
             echo -e "${GREEN}✅ Done!${NC}"
             read -p "Press Enter to continue..."
