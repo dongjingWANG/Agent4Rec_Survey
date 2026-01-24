@@ -4,7 +4,7 @@
 
 A collection of resources and papers of **LLM-Powered Agents for Recommender Systems** (Agent4Rec).
 
-![Agent Framework](images/fig_agent.png)
+<img src="images/fig_agent.png" alt="Agent Framework" style="max-width: 100%;">
 
 </div>
 
@@ -22,7 +22,7 @@ For the **"HOW"** question, we highlights optimization approaches targeting the 
 
 <div align="center">
 
-![Category Framework](images/fig_category.png)
+<img src="images/fig_category.png" alt="Category Framework" style="max-width: 100%;">
 
 </div>
 
